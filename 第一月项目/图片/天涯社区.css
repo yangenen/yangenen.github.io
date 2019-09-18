@@ -1,0 +1,166 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+.daohang{
+	width: 100%;
+	height: 894px;
+}
+.nav{
+	width: 1865px;
+	height: 894px;
+	margin:0 auto;
+	position: relative;
+}
+.logo{
+	position: absolute;
+	top:0px;
+	left:440px;
+}
+.background{
+	position: absolute;
+	top:78px;
+	left: 0px;
+	z-index: -3;
+}
+.navleft{
+	font-size:12px;
+	color:#bebebe;
+	position: absolute;
+	top:45px;
+	right: 468px;
+}
+.daohang .nav ul li{
+	list-style: none;
+	float: left;
+	padding-left:15px;
+	color:#a2a2a2;
+}
+.daohang .nav ul{
+	width: 1022px;
+	height: 15px;
+	position: absolute;
+	bottom:227px;
+	left:50%;
+	margin-left: -511px;
+	font-size:14px;
+}
+.daohang .nav ul li a{
+	color:#a2a2a2;
+	text-decoration: none;
+}
+.daohang .nav ul li a:hover{
+	color:red;
+	text-decoration: underline;
+}
+.daohang .nav ul li .redzi{
+	color:#cd8694;
+	text-decoration: none;
+}
+.daohang .nav ul li .redzi:hover{
+	color:#cd8694;
+	text-decoration: underline;
+}
+.box{
+	width: 1158px;
+	height: 15px;
+	font-size: 15px;
+	position: absolute;
+	bottom:205px;
+	left:50%;
+	margin-left: -579px;
+}
+.box a{
+	color:#bebebe;
+	padding-left: 15px;
+	text-decoration: none;
+}
+.box a:hover{
+	text-decoration: underline;
+}
+.box0{
+	width: 1290px;
+	height: 15px;
+	font-size: 15px;
+	position: absolute;
+	bottom:180px;
+	left:50%;
+	margin-left: -645px;
+}
+.box0 a{
+	color:#bebebe;
+	padding-left: 15px;
+	text-decoration: none;
+}
+.box0 a:hover{
+	text-decoration: underline;
+}
+.box0 .no:hover{
+	text-decoration: none;
+}
+.bottom0{
+	position: absolute;
+	bottom:90px;
+	left:406px;
+}
+.bigbox{
+	width:351px;
+	height: 431px;
+	background:url(12.jpg);
+	position: absolute;
+	top:112px;
+	right: 452px;
+}
+.ma{
+	position: absolute;
+	top:90px;
+	right:97px;
+}
+.bt{
+	font-size:20px;
+	font-weight: normal;
+	position: absolute;
+	top:60px;
+	right: 66px;
+}
+.mabottom{
+	font-size: 15px;
+	color:#d5d5d5;
+	position: absolute;
+	bottom:148px;
+	right: 112px;
+}
+.mabottom:hover{
+	color:red;
+	text-decoration:underline;
+}
+.zc{
+	position: absolute;
+	bottom:93px;
+	right: 42px;
+	text-decoration: none;
+	color: #738ad8;
+}
+.zc:hover{
+	text-decoration: underline;
+}
+.left{
+	position: absolute;
+	bottom:40px;
+	left:20px;
+}
+.right{
+	position: absolute;
+	bottom:40px;
+	right:20px;
+}
+.right a:hover{
+	text-decoration: underline;
+}
+.right a{
+	text-decoration: none;
+	color: black;
+}
+
+
+
