@@ -1,0 +1,436 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+/*清除浮动代码*/
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.clearfloat {
+  zoom: 1;
+}
+header {
+  width: 100%;
+  height: 800px;
+  background: url(http://www.sungoedu.com/images/banner_bj.jpg) center no-repeat;
+  overflow: hidden;
+  margin: 0 auto;
+}
+header nav {
+  width: 1200px;
+  margin: 40px auto 0;
+  height: 50px;
+  line-height: 50px;
+  color: #333;
+}
+header nav .logo {
+  width: 190px;
+  height: auto;
+  margin-left: 0;
+  float: left;
+}
+header nav ul {
+  position: relative;
+  width: 880px;
+  margin-right: 0;
+  font-family: "Microsoft YaHei", SimSun, SimHei;
+  font-size: 14px;
+  float: right;
+}
+header nav ul li a {
+  display: inline-block;
+  width: 115px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+header nav ul .m {
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+header nav ul .m .s {
+  float: right;
+  width: 3px;
+  font-style: normal;
+  text-align: center;
+  color: #D4D4D4;
+  font-size: 12px;
+}
+header nav ul .m ol {
+  transition: all 0.5s;
+  position: absolute;
+  width: 118px;
+  left: -3px;
+  top: 50px;
+  z-index: 1;
+  border-top: 0;
+  opacity: 0;
+  background: #fff;
+}
+header nav ul .m ol li a:hover {
+  color: #367fff;
+}
+header nav ul .m ol li a {
+  display: block;
+  border-bottom: 1px solid #E6E4E3;
+  padding: 8px 0;
+  height: 28px;
+  line-height: 28px;
+  color: #000;
+  font-size: 12px;
+  font-weight: bold;
+}
+header nav ul .nav-bot {
+  background: #367fff;
+  height: 8px;
+  width: 118px;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.25s;
+}
+header h1 {
+  width: 1200px;
+  height: 412px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 120px;
+  font-size: 5rem;
+  line-height: 7rem;
+  color: #fff;
+}
+header h1 .h1-bot {
+  height: 96px;
+  line-height: 96px;
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 6rem;
+  color: #fff;
+  text-align: justify;
+  font-family: '微软雅黑';
+  font-weight: normal;
+}
+header h1 a {
+  display: inline-block;
+  height: 56px;
+  float: left;
+  margin-right: 60px;
+  line-height: 50px;
+}
+header h1 a img {
+  display: inline-block;
+}
+section {
+  width: 1500px;
+  margin: 0 auto;
+  margin-top: -100px;
+}
+section .top {
+  background-size: 100% 100%;
+  background: url(http://www.sungoedu.com/images/white.png) no-repeat;
+  height: 650px;
+  margin-bottom: 60px;
+}
+section .top .top-left,
+section .top .top-right {
+  float: left;
+  width: 50%;
+  height: 100%;
+  text-align: right;
+}
+section .top .top-left .pic {
+  margin-top: 90px;
+  display: inline-block;
+  width: 558px;
+  height: auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.247);
+  margin-bottom: 50px;
+}
+section .top .top-left .pic-bot {
+  display: inline-block;
+  width: 562px;
+}
+section .top .top-left .pic-bot img {
+  float: left;
+}
+section .top .top-left .pic-bot img:nth-child(1) {
+  float: left;
+}
+section .top .top-left .pic-bot img:nth-child(2) {
+  float: right;
+}
+section .top .top-right {
+  width: 45%;
+  padding-left: 5%;
+}
+section .top .top-right h2 {
+  width: 100px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #1874ff;
+  margin-top: 90px;
+}
+section .top .top-right p {
+  width: 80%;
+  margin-right: 10%;
+  font-size: 16px;
+  text-align: left;
+  line-height: 30px;
+  color: #4c4c4c;
+  padding-top: 20px;
+}
+section .top .top-right .gyskul {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 5%;
+  margin-top: 50px;
+}
+section .top .top-right .gyskul li:hover {
+  color: #367fff;
+}
+section .top .top-right .gyskul li {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+  width: 30%;
+  float: left;
+  list-style: disc;
+  padding-top: 10px;
+}
+section .top-main {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  margin: 0 auto;
+}
+section .top-main .top-main-body {
+  margin: 0 auto;
+  width: 1200px;
+}
+section .top-main .top-main-body div {
+  position: relative;
+  width: 345px;
+  height: 290px;
+  padding-top: 270px;
+  padding-left: 25px;
+  padding-right: 25px;
+  float: left;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-right: 5px;
+}
+section .top-main .top-main-body div h4 {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+section .top-main .top-main-body div h6 {
+  font-size: 15px;
+  color: #1874ff;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+section .top-main .top-main-body div p {
+  padding-right: 40px;
+}
+section .top-main .top-main-body div h5 {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  left: 0;
+  margin-top: 50px;
+}
+section .top-main .top-main-body div h5 a {
+  display: inline-block;
+  width: 47%;
+  height: 50px;
+  font-size: 20px;
+  color: #1874ff;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  font-weight: normal;
+}
+section .main-main {
+  margin: 20px;
+  width: 100%;
+}
+section .main-main .content {
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+}
+section .main-main .content div {
+  width: 50%;
+  float: left;
+}
+section .main-main .content .cont-l img {
+  width: 100%;
+}
+section .main-main .content .cont-l p {
+  width: 100%;
+}
+section .main-main .content .cont-l p img:first-child {
+  float: left;
+  width: 250px;
+  height: 60px;
+}
+section .main-main .content .cont-l p img:last-child {
+  float: right;
+  width: 250px;
+  height: 60px;
+}
+section .main-main .content .cont-r {
+  width: 45%;
+  padding-left: 5%;
+}
+section .main-main .content .cont-r h3 {
+  display: block;
+  float: none;
+  width: 100%;
+  font-size: 10px;
+  margin-top: 50px;
+  font-weight: normal;
+}
+section .main-main .content .cont-r h2 {
+  font-size: 24px;
+  color: #333;
+}
+section .main-main .content .cont-r h2 a {
+  font-size: 16px;
+  color: #1874ff;
+  line-height: 60px;
+  text-decoration: none;
+  font-weight: normal;
+}
+section .main-main .content .cont-r .cont-r-m {
+  width: 100% !important;
+  float: none;
+}
+section .main-main .content .cont-r .cont-r-m div {
+  float: none;
+  width: 100% !important;
+}
+section .main-main .content .cont-r .cont-r-m div h6 {
+  font-size: 12px;
+  line-height: 24px;
+  color: #333;
+}
+section .main-main .content .cont-r .cont-r-m div h6 i {
+  display: inline-block;
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin-right: 14px;
+  margin-top: 8px;
+  background-color: #1874ff;
+}
+section .main-main .content .cont-r .cont-r-m div p {
+  font-size: 10px;
+  line-height: 24px;
+  color: #333;
+  text-align: justify;
+}
+section .mid {
+  display: block;
+  width: 1500px;
+  margin: 0 auto;
+}
+section .main-end {
+  background: white;
+  width: 100%;
+}
+section .main-end .main-endd {
+  width: 1200px;
+  margin: 0 auto;
+}
+section .main-end .main-endd div {
+  width: 29%;
+  height: 500px;
+  float: left;
+  margin: 20px;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #D2D2D2;
+  background-size: 100% 100%;
+  background: url(http://www.sungoedu.com/images/bj_que_1.png) no-repeat;
+}
+section .main-end .main-endd div h6 {
+  width: 336px;
+  position: absolute;
+  top: 300px;
+  left: 20px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444;
+}
+section .main-end .main-endd div h6 p {
+  width: 92%;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 22px;
+  color: #666;
+  text-align: justify;
+  font-weight: normal;
+}
+section .main-end .main-endd div h6 a {
+  font-weight: normal;
+}
+section .main-end .main-endd div h6 a:hover {
+  color: #367fff;
+}
+footer {
+  width: 100%;
+  height: 540px;
+  background-color: #333333;
+  padding-top: 30px;
+}
+footer .end {
+  width: 1500px;
+  height: 60%;
+  margin: 0 auto;
+}
+footer .end div {
+  width: 250px;
+  float: left;
+  text-align: center;
+}
+footer .end div p {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  height: 24px;
+  line-height: 24px;
+}
+footer .end div p:first-child {
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+}
+footer .end div img {
+  width: 160px;
+  height: 160px;
+  display: inline-block;
+}
+footer h1 {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: normal;
+}
+footer h1 .end-logo {
+  display: inline-block;
+}
