@@ -1,10 +1,13 @@
 $(document).on("ready",function(){
     // 导航栏滑动
     let index=0;
+    $(".nav-bot").width($(".nav .m").width());
+    $(".nav .m ol").width($(".nav .m").width());
     $(".nav .m").hover(function(){
         // let oftlt=$(this).width();
         // $(".nav-bot").css("left",oftlt*$(this).index()+"px");
-        $(".nav-bot").css("left",118*$(this).index()+"px");
+        // console.log($(this).width());
+        $(".nav-bot").css("left",$(this).width()*$(this).index()+"px");
         $(this).find("ol").css("opacity",1);
     },function(){
         $(".nav-bot").css("left","0px");
@@ -59,6 +62,18 @@ $(document).on("ready",function(){
                 text1+="<div><h6><i></i>"+res.gysk.cont[i].h6+"</h6><p>"+res.gysk.cont[i].p+"</p></div>";
             }
             $(".cont-r-m").html(text1);
+        }
+    })
+    let lock=true;
+    $(".xlon").on("click",function(){
+        if(lock==true){
+            $(this).find("p").css("background","#999");
+            $(".nav").css("display","block");
+            lock=false;
+        }else{
+            $(this).find("p").css("background","white");
+            $(".nav").css("display","none");
+            lock=true;
         }
     })
 })

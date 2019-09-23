@@ -1,7 +1,7 @@
 *{padding: 0;margin: 0;}
 li{list-style: none;}
 // @import 是导入的意思 可以把一个样式文件导入到另外一个样式文件里面去
-// @import "common";
+@import "common";
 /*清除浮动代码*/
 .clearfloat:after {
     display: block;
@@ -14,33 +14,53 @@ li{list-style: none;}
     zoom: 1;
   }
 header{
-    width: 100%;
-    height: 800px;
+    width: 30rem;
+    padding-bottom: 1rem;
     background: url(http://www.sungoedu.com/images/banner_bj.jpg) center no-repeat;
     overflow: hidden;
     margin: 0 auto;
     nav{
-        width: 1200px;
+        display: block;
+        width:100%;
         margin: 40px auto 0;
         height: 50px;
         line-height: 50px;
         color: #333;
+        .xlon{
+            margin-top: -50px;
+            display:none;
+            width:30px;
+            height:30px;
+            border-radius:20px;
+            margin-right:1rem;
+            border: 2px solid white;
+            float: right;
+            p{
+                width: 80%;
+                margin-right: 10%;
+                margin-left: 10%;
+                background: white;
+                height: 4px;
+                border-radius: 20px;
+                margin-top:14%;
+            }
+        }
         .logo{
-            width: 190px;
+            width: 3.8rem;
             height: auto;
-            margin-left: 0;
+            margin-left:1rem;
             float: left;
         }
         ul{
             position: relative;
-            width: 880px;
+            width: 17rem;
             margin-right: 0;
             font-family: "Microsoft YaHei",SimSun,SimHei;
             font-size: 14px;
             float: right;
             li a{
                 display: inline-block;
-                width: 115px;
+                width: 2.3rem;
                 text-align: center;
                 font-weight: bold;
                 color: #fff;
@@ -49,7 +69,7 @@ header{
             .m{
                 float: left;
                 position: relative;
-                z-index: 1;
+                // z-index: 1;
                 .s{
                     float: right;
                     width: 3px;
@@ -61,7 +81,6 @@ header{
                 ol{
                     transition: all 0.5s;
                     position: absolute;
-                    width: 118px;
                     left: -3px;
                     top: 50px;
                     z-index: 1;
@@ -73,6 +92,7 @@ header{
                     color: #367fff;
                 }
                 ol li a{
+                    width: 100%;
                     display: block;
                     border-bottom: 1px solid #E6E4E3;
                     padding: 8px 0;
@@ -87,7 +107,6 @@ header{
             .nav-bot{
                 background:#367fff;
                 height:8px;
-                width: 118px;
                 position: absolute;
                 bottom: 0;
                 transition: all 0.25s;
@@ -95,21 +114,19 @@ header{
         }
     }
     h1{
-        width: 1200px;
-        height: 412px;
+        width:100%;
+        height: 8.24rem;
         margin: 0 auto;
         text-align: left;
         margin-top: 120px;
-        font-size: 5rem;
-        line-height: 7rem;
+        font-size:2rem;
+        line-height: 2.5rem;
+        margin-left: 1.5rem;
         color: #fff;
         .h1-bot{
-            height: 96px;
-            line-height: 96px;
-            width: 1200px;
-            margin: 0 auto;
-            font-size: 1.2rem;
-            line-height: 6rem;
+            width: 24rem;
+            font-size: 0.5rem;
+            line-height:2rem;
             color: #fff;
             text-align: justify;
             font-family: '微软雅黑';
@@ -117,10 +134,10 @@ header{
         }
         a{
             display: inline-block;
-            height: 56px;
+            height: 2rem;
             float: left;
-            margin-right: 60px;
-            line-height: 50px;
+            margin-right: 1.5rem;
+            line-height: 1rem;
             img{
                 display: inline-block;
             }
@@ -128,14 +145,15 @@ header{
     }
 }
 section{
-    width: 1500px;
+    width: 24rem;
     margin: 0 auto;
-    margin-top: -100px;
+    margin-top: -2rem;
     .top{
         background-size:100% 100%;
-        background: url(http://www.sungoedu.com/images/white.png) no-repeat;
-        height: 650px;
-        margin-bottom: 60px;
+        background:white;
+        height: 13rem;
+        margin-bottom: 1rem;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.247);
         .top-left,.top-right{
             float: left;
             width: 50%;
@@ -144,17 +162,23 @@ section{
         }
         .top-left{
             .pic{
-                margin-top: 90px;
+                margin-top: 1.8rem;
                 display: inline-block;
-                width:558px;
-                height: auto;
+                width:9rem;
+                margin-left: 1rem;
                 box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.247);
                 margin-bottom: 50px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
             }
             .pic-bot{
                 display: inline-block;
-                width: 562px;
+                width:9rem;
+                margin-left: 1rem;
                 img{
+                    width:45%;
                     float: left;
                 }
                 img:nth-child(1){float: left;}
@@ -165,25 +189,26 @@ section{
             width: 45%;
             padding-left: 5%;
             h2{
-                width: 100px;
-                padding-bottom: 20px;
+                width:2rem;
+                font-size: .5rem;
+                padding-bottom: .4rem;
                 border-bottom: 2px solid #1874ff;
-                margin-top: 90px;
+                margin-top:1.8rem;
             }
             p{
                 width: 80%;
                 margin-right:10%;
-                font-size: 16px;
+                font-size: .25rem;
                 text-align: left;
-                line-height: 30px;
+                line-height:0.5rem;
                 color: #4c4c4c;
-                padding-top: 20px;
+                padding-top: 0.5rem;
             }
             .gyskul{
                 width: 80%;
                 margin-right:10%;
                 margin-left:5%;
-                margin-top: 50px;
+                margin-top:1rem;
                 li:hover{
                     color: #367fff;
                 }
@@ -194,6 +219,7 @@ section{
                     text-align: left;
                     width: 30%;
                     float: left;
+                    font-size: 0.25rem;
                     list-style: disc;
                     padding-top: 10px;
                 }
@@ -202,52 +228,53 @@ section{
     }
     .top-main{
         width: 100%;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
         background-color: #f7f7f7;
         margin: 0 auto;
         .top-main-body{
             margin: 0 auto;
-            width: 1200px;
+            width: 24rem;
             div{
                 position: relative;
-                width: 345px;
-                height: 290px;
-                padding-top: 270px;
-                padding-left: 25px;
-                padding-right: 25px;
+                width:25%;
+                height: 5.8rem;
+                padding-top: 5.4rem;
+                padding-left: .5rem;
+                padding-right: .5rem;
                 float: left;
                 overflow: hidden;
-                margin-top: 50px;
-                margin-right: 5px;
+                margin-top: 1rem;
+                margin-left:.8rem;
                 h4{
-                    font-size: 20px;
+                    font-size: .4rem;
                     color: #333333;
-                    margin-bottom: 10px;
+                    margin-bottom:0.2rem;
                 }
                 h6{
-                    font-size: 15px;
+                    font-size: 0.3rem;
                     color: #1874ff;
                     font-weight: normal;
-                    margin-bottom: 20px;
+                    margin-bottom: .4rem;
                 }
                 p{
-                    padding-right: 40px;
+                    padding-right:-0.2rem;
+                    font-size: 0.28rem;
                 }
                 h5{
                     position: absolute;
                     bottom: 0px;
                     width: 100%;
                     left: 0;
-                    margin-top: 50px;
+                    margin-top: 1rem;
                     a{
                         display: inline-block;
-                        width: 47%;
-                        height: 50px;
-                        font-size:20px;
+                        width: 50%;
+                        height: 1rem;
+                        font-size:0.4rem;
                         color: #1874ff;
                         text-align: center;
-                        line-height: 50px;
+                        line-height: 1rem;
                         text-decoration: none;
                         font-weight: normal;
                     }
@@ -256,11 +283,11 @@ section{
         }
     }
     .main-main{
-        margin:20px;
+        margin-top:0.4rem;
         width: 100%;
         .content{
-            width: 1200px;
-            height: 600px;
+            width: 24rem;
+            height: 1.5rem;
             margin: 0 auto;
             div{
                 width: 50%;
@@ -272,16 +299,19 @@ section{
                     width: 100%;
                 }
                 p{
-                    width: 100%;
+                    width: 90%;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    margin-bottom: 10px;
                     img:first-child{
                         float: left;
-                        width: 250px;
-                        height: 60px;
+                        width: 5rem;
+                        height: 1.1rem;
                     }
                     img:last-child{
                         float: right;
-                        width: 250px;
-                        height: 60px;
+                        width: 5rem;
+                        height: 1.1rem;
                     }
                 }
             }
@@ -290,19 +320,19 @@ section{
                     display: block;
                     float: none;
                     width: 100%;
-                    font-size: 10px;
-                    margin-top: 50px;
+                    font-size: 0.25rem;
+                    margin-top: 25px;
                     font-weight: normal;
                 }
                 width: 45%;
                 padding-left:5%;
                 h2{
-                    font-size: 24px;
+                    font-size:.5rem;
                     color: #333;
                     a{
-                        font-size: 16px;
+                        font-size: .35rem;
                         color: #1874ff;
-                        line-height: 60px;
+                        line-height: 1rem;
                         text-decoration: none;
                         font-weight: normal;
                     }
@@ -314,8 +344,8 @@ section{
                         float: none;
                         width: 100% !important;
                         h6{
-                            font-size: 12px;
-                            line-height: 24px;
+                            font-size:.35rem;
+                            line-height:.5rem;
                             color: #333;
                             i{
                                 display: inline-block;
@@ -328,9 +358,10 @@ section{
                             }
                         }
                         p{
-                            font-size: 10px;
-                            line-height: 24px;
+                            font-size:.3rem;
+                            line-height: 0.5rem;
                             color: #333;
+                            padding-right: 1rem;
                             text-align: justify;
                         }
                     }
@@ -340,43 +371,45 @@ section{
     }
     .mid{
         display: block;
-        width: 1500px;
+        width:24rem;
         margin:0 auto;
     }
     .main-end{
         background: white;
         width: 100%;
         .main-endd{
-            width: 1200px;
+            width: 24rem;
             margin: 0 auto;
             div{
                 width:29%;
-                height: 500px;
+                height: 10rem;
                 float: left;
-                margin:20px;
+                margin:2%;
                 position: relative;
                 border-radius: 10px;
                 border: 1px solid #D2D2D2;
-                background-size: 100% 100%;
-                background: url(http://www.sungoedu.com/images/bj_que_1.png) no-repeat;
+                background-size: 100% 100% !important;
                 h6{
-                    width: 336px;
+                    width:90%;
                     position: absolute;
-                    top: 300px;
-                    left: 20px;
-                    font-size: 15px;
-                    line-height: 30px;
+                    top: 6rem;
+                    left:5%;
+                    font-size: 0.3rem;
+                    line-height: 0.6rem;
                     color: #444;
                     p{
-                        width: 92%;
-                        font-size: 14px;
+                        width: 100%;
+                        font-size: 0.3rem;
                         letter-spacing: 1px;
-                        line-height: 22px;
+                        line-height: 0.45rem;
                         color: #666;
                         text-align: justify;
                         font-weight: normal;
                     }
                     a{
+                        display: inline;
+                        position: absolute;
+                        bottom: -20px;
                         font-weight: normal;
                     }
                     a:hover{
@@ -388,25 +421,25 @@ section{
     }
 }
 footer{
-    width: 100%;
-    height: 540px;
+    width:100%;
+    margin: 0 auto;
     background-color: #333333;
-    padding-top: 30px;
+    padding-top: 0.6rem;
     .end{
-        width: 1500px;
+        width: 24rem;
         height:60%;
         margin: 0 auto;
         div{
-            width: 250px;
+            width:16%;
             float: left;
             text-align: center;
             p{
                 color: white;
                 width: 100%;
                 text-align: center;
-                font-size: 14px;
-                height: 24px;
-                line-height: 24px;
+                font-size: 10px;
+                height: 25px;
+                line-height: 20px;
             }
             p:first-child{
                 font-size: 18px;
@@ -414,78 +447,280 @@ footer{
                 line-height: 50px;
             }
             img{
-                width: 160px;
-                height: 160px;
+                width: 3.2rem;
+                height: 3.2rem;
                 display: inline-block;
             }
         }
     }
     h1{
+        margin: 0 auto;
+        margin-top: 0.25rem;
         text-align: center;
-        width: 100%;
-        .end-logo{
-            display: inline-block;
-        }
+        width:24rem;
         color: #fff;
-        line-height: 36px;
-        font-size: 14px;
+        line-height: 30px;
+        font-size: 10px;
         font-weight: normal;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width:1500px){
+    header{
+        width: 24rem;
+    }
+    footer{
+        width: 24rem;
+    }
+}
+@media screen and (max-width: 750px){
+    header{
+        nav{
+            .logo{
+                width: 100%;
+                text-align: center;
+                margin-left: 0;
+                float: none;
+                img{
+                    width:5rem;
+                }
+            }
+            .nav{
+                margin-top: 20px;
+                width: 100%;
+                float: none;
+                .m{
+                    width: 14%;
+                    text-align: center;
+                }
+            }
+        }
+        h1{
+            width:80% !important;
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+    section{
+        margin-top: 0;
+        .top{
+            width: 100%;
+            height: 30rem;
+            .top-left{
+                width: 100%;
+                display:block;
+                float: none;
+                height: 50%;
+                .pic{
+                    float: none;
+                    display:block;
+                    width: 80%;
+                    margin-left: 10%;
+                }
+                .pic-bot{
+                    float: none;
+                    width: 80%;
+                    display:block;
+                    margin-left: 10%;
+                }
+            }
+            .top-right{
+                width: 90%;
+                display:block;
+                float: none;
+                height: 50%;
+                padding-left: 10%;
+                h2{
+                    width:3rem;
+                    font-size: 0.7rem;
+                }
+                p{
+                    font-size: 0.5rem;
+                    line-height: 0.7rem;
+                }
+                ul{
+                    li{
+                        font-size: 0.5rem !important;
+                    }
+                }
+            }
+        }
+        .main-end{
+            .main-endd{
+                div{
+                    width: 45%;
+                    height: 14rem;
+                }
+                h6{
+                    top: 8.5rem !important;
+                    font-size: 0.5rem !important;
+                    p{
+                        font-size: 0.4rem !important;
+                        line-height: 0.6rem !important;
+                    }
+                }
+            }
+        }
+    }
+    .top-main{
+        .top-main-body{
+            div{
+                width: 40% !important;
+                padding-top: 7.4rem !important; 
+                h4{
+                    font-size: .6rem !important;
+                }
+                h6{
+                    font-size: 0.5rem !important;
+                }
+                p{
+                    font-size: 0.35rem !important;
+                }
+            }
+        }  
+    }
+}
+@media screen and (max-width: 540px){
+    .nav{
+        display: none;
+    }
+    .xlon{
+        display: block !important;
+    }
+    .nav{
+        width: 100%;
+        background: #000;
+        .m{
+            width: 100% !important;
+            .s{
+                display: none;
+            }
+            a{
+                width: 100%;
+            }
+            ol{
+                width: 100% !important;
+                position: absolute;
+                li{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .nav-bot{
+        display: none;
+    }
+    header{
+        h1{
+            margin-top: 10px;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            a{
+                img{
+                    width: 40%;
+                }
+            }
+        }
+    }
+    .top{
+        height: 40rem !important;
+    }   
+    section{
+        .top-main{
+            .top-main-body{
+                div {
+                    width:90% !important;
+                    height: 27.8rem;
+                    background-size: contain !important;
+                    h4{
+                        position: absolute;
+                        top: 16rem;
+                        font-size: 1.6rem !important;
+                    }
+                    h6{
+                        position: absolute;
+                        top: 19rem;
+                        font-size: 1.3rem !important;
+                    }
+                    p{
+                        position: absolute;
+                        top:21rem;
+                        padding-right: 2rem;
+                        font-size: 1rem !important;
+                    }
+                    h5{
+                        bottom:2rem;
+                        a{
+                            font-size: 1rem !important;
+                        }
+                    }
+                }
+            } 
+        } 
+        .main-main{
+            .content{
+                div{
+                    width: 100%;
+                }
+                .cont-l{
+                    p{
+                        img{
+                            width: 8rem !important;
+                            height: 2rem !important;
+                        }
+                    }
+                }
+                .cont-r{
+                    width: 100%;
+                    h3{
+                        padding-bottom: 20px;
+                    }
+                    h2{
+                        font-size: 1.5rem;
+                        a{
+                            font-size: 1.35rem;
+                        }
+                    }
+                    .cont-r-m{
+                        div{
+                            h6{
+                                font-size: 0.8rem;
+                                line-height: 1.5rem;
+                            }
+                            p{
+                                font-size: 0.8rem;
+                                line-height: 1.5rem;
+                                padding-right: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main-end{
+            .main-endd{
+                div{
+                    width: 95%;
+                    height: 26rem;
+                    h6{
+                        top:15.5rem !important;
+                        font-size:0.89rem !important;
+                        p{
+                            line-height: 2rem !important;
+                            font-size: 0.7rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    footer{
+        .end{
+            div{
+                width: 25%;
+            }
+        }
+        h1{
+            margin-top: 2.5rem;
+        }
+    }
+}

@@ -5,6 +5,61 @@
 li {
   list-style: none;
 }
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
 /*清除浮动代码*/
 .clearfloat:after {
   display: block;
@@ -17,28 +72,48 @@ li {
   zoom: 1;
 }
 header {
-  width: 100%;
-  height: 800px;
+  width: 30rem;
+  padding-bottom: 1rem;
   background: url(http://www.sungoedu.com/images/banner_bj.jpg) center no-repeat;
   overflow: hidden;
   margin: 0 auto;
 }
 header nav {
-  width: 1200px;
+  display: block;
+  width: 100%;
   margin: 40px auto 0;
   height: 50px;
   line-height: 50px;
   color: #333;
 }
+header nav .xlon {
+  margin-top: -50px;
+  display: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin-right: 1rem;
+  border: 2px solid white;
+  float: right;
+}
+header nav .xlon p {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  background: white;
+  height: 4px;
+  border-radius: 20px;
+  margin-top: 14%;
+}
 header nav .logo {
-  width: 190px;
+  width: 3.8rem;
   height: auto;
-  margin-left: 0;
+  margin-left: 1rem;
   float: left;
 }
 header nav ul {
   position: relative;
-  width: 880px;
+  width: 17rem;
   margin-right: 0;
   font-family: "Microsoft YaHei", SimSun, SimHei;
   font-size: 14px;
@@ -46,7 +121,7 @@ header nav ul {
 }
 header nav ul li a {
   display: inline-block;
-  width: 115px;
+  width: 2.3rem;
   text-align: center;
   font-weight: bold;
   color: #fff;
@@ -55,7 +130,6 @@ header nav ul li a {
 header nav ul .m {
   float: left;
   position: relative;
-  z-index: 1;
 }
 header nav ul .m .s {
   float: right;
@@ -68,7 +142,6 @@ header nav ul .m .s {
 header nav ul .m ol {
   transition: all 0.5s;
   position: absolute;
-  width: 118px;
   left: -3px;
   top: 50px;
   z-index: 1;
@@ -80,6 +153,7 @@ header nav ul .m ol li a:hover {
   color: #367fff;
 }
 header nav ul .m ol li a {
+  width: 100%;
   display: block;
   border-bottom: 1px solid #E6E4E3;
   padding: 8px 0;
@@ -92,28 +166,25 @@ header nav ul .m ol li a {
 header nav ul .nav-bot {
   background: #367fff;
   height: 8px;
-  width: 118px;
   position: absolute;
   bottom: 0;
   transition: all 0.25s;
 }
 header h1 {
-  width: 1200px;
-  height: 412px;
+  width: 100%;
+  height: 8.24rem;
   margin: 0 auto;
   text-align: left;
   margin-top: 120px;
-  font-size: 5rem;
-  line-height: 7rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  margin-left: 1.5rem;
   color: #fff;
 }
 header h1 .h1-bot {
-  height: 96px;
-  line-height: 96px;
-  width: 1200px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  line-height: 6rem;
+  width: 24rem;
+  font-size: 0.5rem;
+  line-height: 2rem;
   color: #fff;
   text-align: justify;
   font-family: '微软雅黑';
@@ -121,24 +192,25 @@ header h1 .h1-bot {
 }
 header h1 a {
   display: inline-block;
-  height: 56px;
+  height: 2rem;
   float: left;
-  margin-right: 60px;
-  line-height: 50px;
+  margin-right: 1.5rem;
+  line-height: 1rem;
 }
 header h1 a img {
   display: inline-block;
 }
 section {
-  width: 1500px;
+  width: 24rem;
   margin: 0 auto;
-  margin-top: -100px;
+  margin-top: -2rem;
 }
 section .top {
   background-size: 100% 100%;
-  background: url(http://www.sungoedu.com/images/white.png) no-repeat;
-  height: 650px;
-  margin-bottom: 60px;
+  background: white;
+  height: 13rem;
+  margin-bottom: 1rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.247);
 }
 section .top .top-left,
 section .top .top-right {
@@ -148,18 +220,24 @@ section .top .top-right {
   text-align: right;
 }
 section .top .top-left .pic {
-  margin-top: 90px;
+  margin-top: 1.8rem;
   display: inline-block;
-  width: 558px;
-  height: auto;
+  width: 9rem;
+  margin-left: 1rem;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.247);
   margin-bottom: 50px;
 }
+section .top .top-left .pic img {
+  width: 100%;
+  height: 100%;
+}
 section .top .top-left .pic-bot {
   display: inline-block;
-  width: 562px;
+  width: 9rem;
+  margin-left: 1rem;
 }
 section .top .top-left .pic-bot img {
+  width: 45%;
   float: left;
 }
 section .top .top-left .pic-bot img:nth-child(1) {
@@ -173,25 +251,26 @@ section .top .top-right {
   padding-left: 5%;
 }
 section .top .top-right h2 {
-  width: 100px;
-  padding-bottom: 20px;
+  width: 2rem;
+  font-size: .5rem;
+  padding-bottom: .4rem;
   border-bottom: 2px solid #1874ff;
-  margin-top: 90px;
+  margin-top: 1.8rem;
 }
 section .top .top-right p {
   width: 80%;
   margin-right: 10%;
-  font-size: 16px;
+  font-size: .25rem;
   text-align: left;
-  line-height: 30px;
+  line-height: 0.5rem;
   color: #4c4c4c;
-  padding-top: 20px;
+  padding-top: 0.5rem;
 }
 section .top .top-right .gyskul {
   width: 80%;
   margin-right: 10%;
   margin-left: 5%;
-  margin-top: 50px;
+  margin-top: 1rem;
 }
 section .top .top-right .gyskul li:hover {
   color: #367fff;
@@ -203,71 +282,73 @@ section .top .top-right .gyskul li {
   text-align: left;
   width: 30%;
   float: left;
+  font-size: 0.25rem;
   list-style: disc;
   padding-top: 10px;
 }
 section .top-main {
   width: 100%;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   background-color: #f7f7f7;
   margin: 0 auto;
 }
 section .top-main .top-main-body {
   margin: 0 auto;
-  width: 1200px;
+  width: 24rem;
 }
 section .top-main .top-main-body div {
   position: relative;
-  width: 345px;
-  height: 290px;
-  padding-top: 270px;
-  padding-left: 25px;
-  padding-right: 25px;
+  width: 25%;
+  height: 5.8rem;
+  padding-top: 5.4rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
   float: left;
   overflow: hidden;
-  margin-top: 50px;
-  margin-right: 5px;
+  margin-top: 1rem;
+  margin-left: .8rem;
 }
 section .top-main .top-main-body div h4 {
-  font-size: 20px;
+  font-size: .4rem;
   color: #333333;
-  margin-bottom: 10px;
+  margin-bottom: 0.2rem;
 }
 section .top-main .top-main-body div h6 {
-  font-size: 15px;
+  font-size: 0.3rem;
   color: #1874ff;
   font-weight: normal;
-  margin-bottom: 20px;
+  margin-bottom: .4rem;
 }
 section .top-main .top-main-body div p {
-  padding-right: 40px;
+  padding-right: -0.2rem;
+  font-size: 0.28rem;
 }
 section .top-main .top-main-body div h5 {
   position: absolute;
   bottom: 0px;
   width: 100%;
   left: 0;
-  margin-top: 50px;
+  margin-top: 1rem;
 }
 section .top-main .top-main-body div h5 a {
   display: inline-block;
-  width: 47%;
-  height: 50px;
-  font-size: 20px;
+  width: 50%;
+  height: 1rem;
+  font-size: 0.4rem;
   color: #1874ff;
   text-align: center;
-  line-height: 50px;
+  line-height: 1rem;
   text-decoration: none;
   font-weight: normal;
 }
 section .main-main {
-  margin: 20px;
+  margin-top: 0.4rem;
   width: 100%;
 }
 section .main-main .content {
-  width: 1200px;
-  height: 600px;
+  width: 24rem;
+  height: 1.5rem;
   margin: 0 auto;
 }
 section .main-main .content div {
@@ -278,17 +359,20 @@ section .main-main .content .cont-l img {
   width: 100%;
 }
 section .main-main .content .cont-l p {
-  width: 100%;
+  width: 90%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 10px;
 }
 section .main-main .content .cont-l p img:first-child {
   float: left;
-  width: 250px;
-  height: 60px;
+  width: 5rem;
+  height: 1.1rem;
 }
 section .main-main .content .cont-l p img:last-child {
   float: right;
-  width: 250px;
-  height: 60px;
+  width: 5rem;
+  height: 1.1rem;
 }
 section .main-main .content .cont-r {
   width: 45%;
@@ -298,18 +382,18 @@ section .main-main .content .cont-r h3 {
   display: block;
   float: none;
   width: 100%;
-  font-size: 10px;
-  margin-top: 50px;
+  font-size: 0.25rem;
+  margin-top: 25px;
   font-weight: normal;
 }
 section .main-main .content .cont-r h2 {
-  font-size: 24px;
+  font-size: .5rem;
   color: #333;
 }
 section .main-main .content .cont-r h2 a {
-  font-size: 16px;
+  font-size: .35rem;
   color: #1874ff;
-  line-height: 60px;
+  line-height: 1rem;
   text-decoration: none;
   font-weight: normal;
 }
@@ -322,8 +406,8 @@ section .main-main .content .cont-r .cont-r-m div {
   width: 100% !important;
 }
 section .main-main .content .cont-r .cont-r-m div h6 {
-  font-size: 12px;
-  line-height: 24px;
+  font-size: .35rem;
+  line-height: .5rem;
   color: #333;
 }
 section .main-main .content .cont-r .cont-r-m div h6 i {
@@ -336,14 +420,15 @@ section .main-main .content .cont-r .cont-r-m div h6 i {
   background-color: #1874ff;
 }
 section .main-main .content .cont-r .cont-r-m div p {
-  font-size: 10px;
-  line-height: 24px;
+  font-size: .3rem;
+  line-height: 0.5rem;
   color: #333;
+  padding-right: 1rem;
   text-align: justify;
 }
 section .mid {
   display: block;
-  width: 1500px;
+  width: 24rem;
   margin: 0 auto;
 }
 section .main-end {
@@ -351,39 +436,41 @@ section .main-end {
   width: 100%;
 }
 section .main-end .main-endd {
-  width: 1200px;
+  width: 24rem;
   margin: 0 auto;
 }
 section .main-end .main-endd div {
   width: 29%;
-  height: 500px;
+  height: 10rem;
   float: left;
-  margin: 20px;
+  margin: 2%;
   position: relative;
   border-radius: 10px;
   border: 1px solid #D2D2D2;
-  background-size: 100% 100%;
-  background: url(http://www.sungoedu.com/images/bj_que_1.png) no-repeat;
+  background-size: 100% 100% !important;
 }
 section .main-end .main-endd div h6 {
-  width: 336px;
+  width: 90%;
   position: absolute;
-  top: 300px;
-  left: 20px;
-  font-size: 15px;
-  line-height: 30px;
+  top: 6rem;
+  left: 5%;
+  font-size: 0.3rem;
+  line-height: 0.6rem;
   color: #444;
 }
 section .main-end .main-endd div h6 p {
-  width: 92%;
-  font-size: 14px;
+  width: 100%;
+  font-size: 0.3rem;
   letter-spacing: 1px;
-  line-height: 22px;
+  line-height: 0.45rem;
   color: #666;
   text-align: justify;
   font-weight: normal;
 }
 section .main-end .main-endd div h6 a {
+  display: inline;
+  position: absolute;
+  bottom: -20px;
   font-weight: normal;
 }
 section .main-end .main-endd div h6 a:hover {
@@ -391,17 +478,17 @@ section .main-end .main-endd div h6 a:hover {
 }
 footer {
   width: 100%;
-  height: 540px;
+  margin: 0 auto;
   background-color: #333333;
-  padding-top: 30px;
+  padding-top: 0.6rem;
 }
 footer .end {
-  width: 1500px;
+  width: 24rem;
   height: 60%;
   margin: 0 auto;
 }
 footer .end div {
-  width: 250px;
+  width: 16%;
   float: left;
   text-align: center;
 }
@@ -409,9 +496,9 @@ footer .end div p {
   color: white;
   width: 100%;
   text-align: center;
-  font-size: 14px;
-  height: 24px;
-  line-height: 24px;
+  font-size: 10px;
+  height: 25px;
+  line-height: 20px;
 }
 footer .end div p:first-child {
   font-size: 18px;
@@ -419,18 +506,233 @@ footer .end div p:first-child {
   line-height: 50px;
 }
 footer .end div img {
-  width: 160px;
-  height: 160px;
+  width: 3.2rem;
+  height: 3.2rem;
   display: inline-block;
 }
 footer h1 {
+  margin: 0 auto;
+  margin-top: 0.25rem;
   text-align: center;
-  width: 100%;
+  width: 24rem;
   color: #fff;
-  line-height: 36px;
-  font-size: 14px;
+  line-height: 30px;
+  font-size: 10px;
   font-weight: normal;
 }
-footer h1 .end-logo {
-  display: inline-block;
+@media screen and (max-width: 1500px) {
+  header {
+    width: 24rem;
+  }
+  footer {
+    width: 24rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  header nav .logo {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+    float: none;
+  }
+  header nav .logo img {
+    width: 5rem;
+  }
+  header nav .nav {
+    margin-top: 20px;
+    width: 100%;
+    float: none;
+  }
+  header nav .nav .m {
+    width: 14%;
+    text-align: center;
+  }
+  header h1 {
+    width: 80% !important;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  section {
+    margin-top: 0;
+  }
+  section .top {
+    width: 100%;
+    height: 30rem;
+  }
+  section .top .top-left {
+    width: 100%;
+    display: block;
+    float: none;
+    height: 50%;
+  }
+  section .top .top-left .pic {
+    float: none;
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+  }
+  section .top .top-left .pic-bot {
+    float: none;
+    width: 80%;
+    display: block;
+    margin-left: 10%;
+  }
+  section .top .top-right {
+    width: 90%;
+    display: block;
+    float: none;
+    height: 50%;
+    padding-left: 10%;
+  }
+  section .top .top-right h2 {
+    width: 3rem;
+    font-size: 0.7rem;
+  }
+  section .top .top-right p {
+    font-size: 0.5rem;
+    line-height: 0.7rem;
+  }
+  section .top .top-right ul li {
+    font-size: 0.5rem !important;
+  }
+  section .main-end .main-endd div {
+    width: 45%;
+    height: 14rem;
+  }
+  section .main-end .main-endd h6 {
+    top: 8.5rem !important;
+    font-size: 0.5rem !important;
+  }
+  section .main-end .main-endd h6 p {
+    font-size: 0.4rem !important;
+    line-height: 0.6rem !important;
+  }
+  .top-main .top-main-body div {
+    width: 40% !important;
+    padding-top: 7.4rem !important;
+  }
+  .top-main .top-main-body div h4 {
+    font-size: .6rem !important;
+  }
+  .top-main .top-main-body div h6 {
+    font-size: 0.5rem !important;
+  }
+  .top-main .top-main-body div p {
+    font-size: 0.35rem !important;
+  }
+}
+@media screen and (max-width: 540px) {
+  .nav {
+    display: none;
+  }
+  .xlon {
+    display: block !important;
+  }
+  .nav {
+    width: 100%;
+    background: #000;
+  }
+  .nav .m {
+    width: 100% !important;
+  }
+  .nav .m .s {
+    display: none;
+  }
+  .nav .m a {
+    width: 100%;
+  }
+  .nav .m ol {
+    width: 100% !important;
+    position: absolute;
+  }
+  .nav .m ol li {
+    width: 100%;
+  }
+  .nav-bot {
+    display: none;
+  }
+  header h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  header h1 a img {
+    width: 40%;
+  }
+  .top {
+    height: 40rem !important;
+  }
+  section .top-main .top-main-body div {
+    width: 90% !important;
+    height: 27.8rem;
+    background-size: contain !important;
+  }
+  section .top-main .top-main-body div h4 {
+    position: absolute;
+    top: 16rem;
+    font-size: 1.6rem !important;
+  }
+  section .top-main .top-main-body div h6 {
+    position: absolute;
+    top: 19rem;
+    font-size: 1.3rem !important;
+  }
+  section .top-main .top-main-body div p {
+    position: absolute;
+    top: 21rem;
+    padding-right: 2rem;
+    font-size: 1rem !important;
+  }
+  section .top-main .top-main-body div h5 {
+    bottom: 2rem;
+  }
+  section .top-main .top-main-body div h5 a {
+    font-size: 1rem !important;
+  }
+  section .main-main .content div {
+    width: 100%;
+  }
+  section .main-main .content .cont-l p img {
+    width: 8rem !important;
+    height: 2rem !important;
+  }
+  section .main-main .content .cont-r {
+    width: 100%;
+  }
+  section .main-main .content .cont-r h3 {
+    padding-bottom: 20px;
+  }
+  section .main-main .content .cont-r h2 {
+    font-size: 1.5rem;
+  }
+  section .main-main .content .cont-r h2 a {
+    font-size: 1.35rem;
+  }
+  section .main-main .content .cont-r .cont-r-m div h6 {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+  section .main-main .content .cont-r .cont-r-m div p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    padding-right: 2rem;
+  }
+  section .main-end .main-endd div {
+    width: 95%;
+    height: 26rem;
+  }
+  section .main-end .main-endd div h6 {
+    top: 15.5rem !important;
+    font-size: 0.89rem !important;
+  }
+  section .main-end .main-endd div h6 p {
+    line-height: 2rem !important;
+    font-size: 0.7rem !important;
+  }
+  footer .end div {
+    width: 25%;
+  }
+  footer h1 {
+    margin-top: 2.5rem;
+  }
 }
