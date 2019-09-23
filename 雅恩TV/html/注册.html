@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册雅恩TV</title>
+    <style>
+ *{
+     padding: 0;
+     margin: 0;
+ }
+ ul{
+     width: 800px;
+     height: 1600px;
+     position: absolute;
+ }
+ ul li{
+     width: 800px;
+     height: 400px;
+     list-style: none;
+     margin: 0;
+     padding:0;
+ }
+ .bigbox #inner ul li{
+     list-style: none;
+ }
+.bigbox{
+    width: 800px;
+    height: 400px;
+    margin-left: 50px;
+    position: relative;
+    border:10px solid black;
+    border-radius: 50px;
+    overflow: hidden;
+    -webkit-transform: perspective(1000px) rotateY(35deg);
+    -webkit-transition: all 0.7s ease-in-out;
+    margin-top: 50px;
+}
+.bigbox:hover{
+    -webkit-transform: perspective(0) rotateY(-15deg);
+}
+#inner{
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    overflow: hidden;
+}
+#inner ol{
+    width: 30px;
+    height:140px;
+    position: absolute;
+    right:10px;
+    bottom:10px;
+}
+#inner ol li{
+    width: 10px;
+    height: 10px;
+    background-color: rgba(4, 139, 218, 0.938);
+    border-radius: 50%;
+    border:5px solid rgba(6, 189, 235, 0.952);
+    text-align: center;
+    line-height: 10px;
+    padding: 5px;
+    margin-top: 5px;
+    list-style: none;
+}
+#inner ol .red{
+    background-color: rgb(10, 0, 156);
+}
+img{
+    width: 800px;
+    height: 400px;
+}
+.logo i{
+    display: inline-block;
+    width: 200px;
+    height:80px;
+    background:url(../images/logo/logo0.png);
+    background-size: 100%;
+}
+.zhi{
+    width: 50px;
+    height: 100px;
+    background: rgb(0, 0, 0);
+    margin-left:430px;
+    margin-top: -20px;
+    border-radius: 50px ;
+    border-bottom: 3px solid rgb(39, 38, 38);
+}
+.tai{
+    width: 200px;
+    height: 50px;
+    margin-top: -25px;
+    border-radius: 50%;
+    background: black;
+    margin-left: 355px;
+}
+.tai0{
+    width: 200px;
+    height: 50px;
+    margin-top: -40px;
+    border-radius: 50%;
+    background: black;
+    margin-left: 355px;
+    margin-bottom: 52px;
+}
+.logo span{
+    font-weight: bold;
+    font-size:51px;
+    font-family: "华文彩云";
+    color:rgb(230, 25, 25);
+    font-weight:bold;
+}
+.logo b{
+    font-weight: bold;
+    font-size: 50px;
+    font-family: "华文琥珀";
+    color:rgb(203, 247, 9);
+    margin-left: -315px;
+}
+.mainbody{
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    right: 100px;
+    top:50px;
+    border:5px solid rgb(145, 145, 145);
+    border-radius: 20px;
+    -webkit-transform: perspective(1000px) rotateY(-25deg);
+}
+.main-body{
+	width:600px;
+	height: 600px;
+	position: relative;
+}
+.main-body-h4{
+	width:600px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	text-align: center;
+	position: relative;
+}
+.main-body-first-a{
+	text-decoration: none;
+	font-size: 50px;
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+	font-weight: bold;
+	color:#d8dde5;
+	position: absolute;
+	right: 20px;
+	top:10px;
+}
+.main-table{
+    width: 600px;
+    height:400px;
+    margin-top: 10px;
+}
+.main-table-left{
+    text-align: right;
+    width: 130px;
+    height: 40px;
+    font-weight: bold;
+}
+.main-table tr td input{
+    width: 300px;
+    height: 40px;
+    padding-left: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+    border:1px #bec6ce solid;
+}
+.main-table tr td select{
+    width:100px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-left: 20px;
+    border:1px #bec6ce solid;
+}
+.sheng{
+    font-size: 20px;
+    margin-left:5px;
+}
+#yzm{
+   width:100px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 20px;
+    float: left;
+}
+#yzm0{
+    float: left;
+    width: 100px;
+    height:30px;
+}
+#hyz{
+    padding-top: 20px;
+    float: left;
+    font-size:10px;
+    color:blue;
+    text-decoration: none;
+}
+.main-table tr td .xb{
+    display: inline-block;
+    font-size: 20px;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    float: left;
+}
+.main-big-bottom{
+	display: block;
+    width: 410px;
+    height: 50px;
+    border-radius: 2px;
+    background: #1418fa;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    opacity: 0.8;
+}
+.main-big-bottom:hover{
+	opacity: 0.99;
+}
+.agree-text {
+    text-align: center;
+    color: #b0b7c0;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 10px;
+}
+.agree-text a {
+    color: #1418fa;
+    text-decoration: none;
+}
+#tip0,#tip03,#tip04,#tip02{
+    color:red;
+    font-size: 10px;
+    padding-left: 5px;
+}
+.main-table tr td #cs{
+    width: 15px;
+    height: 15px;
+}
+.eebigbox{
+     width: 1536px;
+     height: 30px;
+     background-color: black;
+     color:white;
+     position: relative;
+     margin-top: -30px;
+     margin-bottom: 0px;
+ }
+ .eebigbox #eebox ul{
+     width: 4000px;
+     height: 30px;
+     position: absolute;
+ }
+ .eebigbox #eebox ul li{
+     width: 1000px;
+     list-style: none;
+     float: left;
+ }
+ .eebigbox #eebox ul li span{
+   color:rgb(36, 199, 240);
+ }
+ .eebigbox #eebox ul li i{
+   color:red;
+   font-style: normal;
+ }
+ .eebigbox #eebox{
+     margin-left: 300px;
+     width: 1000px;
+     height: 30px;
+     overflow: hidden;
+     position: relative;
+ }
+ .bj{
+     width: 1536px;
+     height:732px ;
+     background:-webkit-gradient(linear,0% 0%,0% 100%,from(rgb(2, 221, 174)),to(rgb(34, 30, 235)));
+     position: relative;
+     margin: 0 auto;
+ }
+    </style>
+</head>
+<body>
+<div class="bj">
+    <div class="logo">
+        <i></i>
+        <span>雅恩TV注册页</span>
+        <b>雅恩TV注册页</b>
+    </div>
+    <div class="bigbox">
+        <div id="inner">
+            <ul>
+                <li><img src="../images/注册/0.jpg" alt=""></li>
+                <li><img src="../images/注册/1.jpg" alt=""></li>
+                <li><img src="../images/注册/2.jpg" alt=""></li>
+                <li><img src="../images/注册/3.jpg" alt=""></li>
+            </ul>
+            <ol>
+                <li class="red"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+    </div>
+    <div class="zhi"></div>
+    <div class="tai"></div>
+    <div class="tai0"></div>
+    <div class="mainbody">
+        <div class="main-body">
+            <h4 class="main-body-h4">
+            雅恩TV注册页
+            <a href="主页.html" class="main-body-first-a">×</a>
+            </h4>
+            <table class="main-table">
+            <tr>
+                <td class="main-table-left">新用户姓名：</td>
+                <td><input type="text" placeholder="请输入您的姓名" id="text01"><span id="tip02"></span></td>
+            </tr>
+            <tr>
+                <td class="main-table-left">性别：</td>
+                <td>
+                    <input type="radio" id="cs">男
+                    <input type="radio" id="cs">女
+                </td>
+            </tr>
+            <tr>
+                <td class="main-table-left">地址：</td>
+                <td>
+                <select>
+                    <option>山西</option>
+                    <option>北京</option>
+                    <option>广东</option>
+                    <option>陕西</option>
+                    <option>上海</option>
+                    <option>福建</option>
+                </select>
+                <span class="sheng">省</span>
+                <select>
+                    <option>太原</option>
+                    <option>吕梁</option>
+                    <option>晋中</option>
+                    <option>长治</option>
+                    <option>运城</option>
+                    <option>忻州</option>
+                </select>
+                <span class="sheng">市</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="main-table-left">手机号：</td>
+                <td><input type="text" placeholder="请输入您的手机号" id="text"><span id="tip0"></span></td>
+            </tr>
+            <tr>
+                <td class="main-table-left">验证码：</td>
+                <td>
+                <input type="text" id="yzm">
+                <span id="yzm0" style="background:url(../images/注册/4.jpg) no-repeat; background-size: 100%;"></span>
+                <a href="#" id="hyz">看不清，换一张</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="main-table-left">密码：</td>
+                <td><input type="password" placeholder="请输入密码" id="text03"><span id="tip03"></span></td>
+            </tr>
+            <tr>
+                <td class="main-table-left">确认密码：</td>
+                <td><input type="password" placeholder="请再次输入密码" id="text04"><span id="tip04"></span></td>
+            </tr>
+            </table>
+            <a href="#" class="main-big-bottom" id="btn">立即注册</a>
+            <p class="agree-text">注册即视为同意<a href="#">《用户使用协议》</a>及<a href="#">《隐私权条款》</a></p>
+        </div>  
+    </div>
+    <div class="eebigbox">
+        <div id="eebox">
+            <ul>
+                <li><span>雅恩TV</span>是一个全新的具有屏蔽所有广告功能的<span>网络电视平台</span>,它可以屏蔽视频片头广告，给您以<i>VIP</i>的<i>贵宾</i>享受</li>
+                <li><span>雅恩TV</span>是一个全新的具有屏蔽所有广告功能的<span>网络电视平台</span>,它可以屏蔽视频片头广告，给您以<i>VIP</i>的<i>贵宾</i>享受</li>
+                <li><span>雅恩TV</span>是一个全新的具有屏蔽所有广告功能的<span>网络电视平台</span>,它可以屏蔽视频片头广告，给您以<i>VIP</i>的<i>贵宾</i>享受</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+//上下轮播图
+var bigbox=document.getElementsByClassName("bigbox")[0];
+var box=document.getElementById("inner");
+var ul=box.children[0];
+var ulliArr=ul.children;
+var ol=box.children[1];
+var olliArr=ol.children;
+ul.appendChild(ulliArr[0].cloneNode(true));
+var k=0;//控制图片
+var s=0;//控制小方块
+var timer=null;
+function autoplay(){
+    timer=setInterval(function(){
+        movestep();
+    },10000)
+}
+autoplay();
+function movestep(){
+    k++;
+    s++;
+    if(k>4){
+        k=1;
+        ul.style.top="0px";
+    }
+    move(ul,-k*400);
+    //排他思想
+    for(var i=0;i<olliArr.length;i++){
+        olliArr[i].className="";
+    }
+    if(s>3){
+        s=0;
+    }
+    olliArr[s].className="red";
+}
+function movestop(){
+    k--;
+    s--;
+    if(k<0){
+        k=3;
+        ul.style.top=-4*400+"px";;
+    }
+    move(ul,-k*400);
+    //排他思想
+    for(var i=0;i<olliArr.length;i++){
+        olliArr[i].className="";
+    }
+    if(s<0){
+        s=3;
+    }
+    olliArr[s].className="red";
+}
+function zfx(){
+    for(i=0;i<olliArr.length;i++){
+        olliArr[i].onmouseover=function(){
+            for(j=0;j<olliArr.length;j++){
+                olliArr[j].className="";
+                if(this==olliArr[j]){
+                    olliArr[j].className="red";
+                    //关联两个计数器
+                    k=s=j;
+                    move(ul,-j*400);
+                }
+            }
+        } 
+    }
+}
+zfx();
+bigbox.onmouseover=function(){
+    clearInterval(timer);
+}
+bigbox.onmouseout=function(){
+    autoplay();
+}
+function move(ele,target){
+    if(ele.timer){ 
+        clearInterval(ele.timer);
+    }
+    var step=target>ele.offsetTop?10:-10;
+    ele.timer=setInterval(function(){
+        ele.style.top=ele.offsetTop+step+"px";
+        var cha=target-ele.offsetTop;
+        if(abs(cha)<=abs(step)){
+            clearInterval(ele.timer);
+            ele.style.top=target+"px";
+        }
+    },20)
+}
+function abs(num){
+    if(num>0){
+        return num;
+    }else{
+        return -num;
+    }
+} 
+//注册页面判断
+var hyz = document.getElementById("hyz");
+hyz.onclick=function(){
+    yzm0.style.background="url(../images/注册/5.jpg)";
+    yzm0.style.backgroundSize="100%";
+}
+var yzm0 = document.getElementById("yzm0");
+var tip0=document.getElementById("tip0");
+var btn=document.getElementById("btn");
+var text=document.getElementById("text");
+btn.onclick=function(){
+       if(text.value==""){
+           tip0.innerHTML="请输入手机号";
+       }else if(isNaN(text.value)){
+           tip0.innerHTML="您的输入有误请重新输入";
+       }else if(text.value.length==11){
+           if(text.value[0]==1){
+               alert("注册成功，请返回主页进行登录")
+           }else{
+               tip0.innerHTML="请输入1开头的手机号";
+           }
+       }else{
+           tip0.innerHTML="请输入正确的手机号";
+       }
+   }
+var text01=document.getElementById("text01");
+var tip02=document.getElementById("tip02");
+	   text01.onblur=function(){
+    if(text01.value==""){
+        tip02.innerHTML="请正确输入您的姓名";
+    }else{
+        tip02.innerHTML="";
+    }
+    }
+var text03=document.getElementById("text03");
+var tip03=document.getElementById("tip03");
+	   text03.onblur=function(){
+    if(text03.value==""){
+        tip03.innerHTML="请正确输入您的密码";
+    }else{
+        tip03.innerHTML="";
+    }
+    }
+var text04=document.getElementById("text04");
+var tip04=document.getElementById("tip04");
+	   text04.onblur=function(){
+    		if(text04.value==""){
+    		    tip04.innerHTML="请再次正确输入您的密码";
+    		}else if(text04.value==text03.value){
+				tip04.innerHTML="";
+    		}else{
+    		    tip04.innerHTML="密码不符，请重新输入";
+    		}
+    }
+
+
+//下面小广告轮播
+var eebigbox=document.getElementsByClassName("eebigbox")[0];
+var eebox=document.getElementById("eebox");
+var eul=eebox.children[0];
+var eulliArr=eul.children;
+eul.appendChild(eulliArr[0].cloneNode(true));
+var ek=0;
+var etimer=null;
+//设置开始计时器
+function autoplay1(){
+    etimer=setInterval(function(){
+        movestep1();
+    },5000)
+}
+autoplay1();//调用开始计时器
+//右点击按钮
+function movestep1(){
+    ek++;
+    if(ek>2){
+        ek=1;
+        eul.style.left="0px";
+    }
+    move1(eul,-ek*1000);
+}
+//ul设置移动
+function move1(elle,targett){
+    if(elle.etimer){ 
+        clearInterval(elle.etimer);
+    }
+    var sttep=targett>elle.offsetLeft?10:-10;
+    elle.etimer=setInterval(function(){
+        elle.style.left=elle.offsetLeft+sttep+"px";
+        var chaa=targett-elle.offsetLeft;
+        if(aabs(chaa)<=aabs(sttep)){
+            clearInterval(elle.etimer);
+            elle.style.left=targett+"px";
+        }
+    },20)
+}
+function aabs(nnum){
+    if(nnum>0){
+        return nnum;
+    }else{
+        return -nnum;
+    }
+}
+</script>
+</body>
+</html>
