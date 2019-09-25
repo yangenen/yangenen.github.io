@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/text.css">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="./js/touminglunbo.js"></script>
+    <script src="js/text.js"></script>
+    <title>雅恩TV，发现生活的美</title>
+</head>
+<body>
+    <div class="container">
+        <!-- 导航 -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"><img class="logo"></a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="火王之千里通风">
+                  </div>
+                  <button type="submit" class="btn btn-default">全网搜</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                      <a href="#">VIP</a>
+                      <ul class="dropdown-vip">
+                            <li><a href="#">了解VIP特权</a></li>
+                            <li><a href="#">领取VIP福利</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#">上传</a>
+                      <ul class="dropdown-shc">
+                            <li><a href="#">上传视频</a></li>
+                            <li><a href="#">制作视频</a></li>
+                            <li><a href="#">我的空间</a></li>
+                            <li><a href="#">视频管理</a></li>
+                            <li><a href="#">播放数据</a></li>
+                            <li><a href="#">申请分成</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#">客户端</a>
+                      <ul class="dropdown-khd">
+                            <li><a href="#">新手跳广告+送VIP</a></li>
+                            <li><a href="#">5倍流畅度不卡顿</a></li>
+                            <li><a href="#">1080p免费畅想</a></li>
+                      </ul>
+                  </li>
+                  <li>
+                      <a href="#">消息</a>
+                      <ul class="dropdown-xxs">
+                            <li><a href="#">更新提醒</a></li>
+                            <li><a href="#">我的消息</a></li>
+                            <li><a href="#">系统通知</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        <img class="user" src="https://yangenen.github.io/%E9%9B%85%E6%81%A9TV/images/%E5%A4%B4%E9%83%A8/6.png" alt="">
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="zc.html">登录</a></li>
+                      <li><a href="zc.html">注册</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- 固定nav -->
+        <div class="top-nav">
+            <div class="container row main">
+                <div class="col-md-2 col-sm-2 top-logo">
+                    <img src="https://yangenen.github.io/%E9%9B%85%E6%81%A9TV/images/logo/logo0.png" alt="">
+                </div>
+                <div class="col-md-10 col-sm-10 row top-logo-main">
+                    <div class="col-md-2 col-sm-2 top-logo-r">雅恩<span>TV</span></div>
+                    <div class="col-md-8 col-sm-10 top-logo-d"><input type="text" placeholder="小猪佩琪"></div>
+                    <div class="col-md-2 top-logo-l"><button>全网搜</button></div>
+                </div>
+            </div>
+        </div>
+        <!-- 轮播 -->
+        <div class="carousel" id="carousel">
+            <div class="imagesList" id="imagesList">
+                <ul>
+                    <li class="first" data-yanse="#333A40">
+                        <a href="">
+                            <img src="https://2img.hitv.com/preview/cms_icon/2019/9/24/09/20190924102948032.jpg_2048x550.jpg" alt="">
+                        </a>
+                    </li>
+                    <li data-yanse="#333A40">
+                        <a href="">
+                            <img src="https://1img.hitv.com/preview/cms_icon/2019/9/20/09/20190920185058102.jpg_2048x550.jpg" alt="">
+                        </a>
+                    </li>
+                    <li data-yanse="#333A40">
+                        <a href="">
+                            <img src="https://1img.hitv.com/preview/cms_icon/2019/9/22/09/20190922113245292.jpg_2048x550.jpg" alt="">
+                        </a>
+                    </li>
+                    <li data-yanse="#333A40">
+                        <a href="">
+                            <img src="https://4img.hitv.com/preview/cms_icon/2019/9/23/09/20190923231802600.jpg_2048x550.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <img src="https://4img.hitv.com/preview/cms_icon/2019/9/23/09/20190923231802600.jpg_2048x550.jpg" alt="" class="zw">
+            </div>
+            <div class="btns">
+                <a href="javascript:void(0);" class="leftBtn" id="leftBtn">&lt;</a>
+                <a href="javascript:void(0);" class="rightBtn" id="rightBtn">&gt;</a>
+            </div>
+            <div class="circles" id="circles">
+                <ol>
+                    <li class="cur">《飞行少年》 <br> 
+                        <span>严屹宽成航校教官</span>
+                    </li>
+                    <li>《哪里有彩虹告诉我》 <br> 
+                        <span>Aom邂逅新F4</span>
+                    </li>
+                    <li>《哎呀好身材》 <br> 
+                        <span>范丞丞分享减肥秘诀</span>
+                    </li>
+                    <li class="last">《激情的岁月》 <br> 
+                        <span>李光洁燃烧青春</span>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="main0">
+            <h1></h1>
+            <div class="row"></div>
+        </div>
+        <div class="main2">
+            <h1></h1>
+            <div class="row"></div>
+        </div>
+        <div class="main1">
+            <h1></h1>
+            <div class="row"></div>
+        </div>
+        <div class="main3">
+            <h1></h1>
+            <div class="row"></div>
+        </div>
+        <div class="main4">
+            <h1>雅恩广告</h1>
+            <div class="swiper-lb">
+            <!-- Swiper -->
+            <div class="swiper-container lb0">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(https://3img.hitv.com/preview/internettv/sp_images/ott/2019/9/17/jilupian/331833/20190917161511605-new.jpg_608x342.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://0img.hitv.com/preview/cms_icon/2019/9/18/09/20190918100322960.jpg_608x342.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://0img.hitv.com/preview/cms_icon/2019/9/24/09/20190924155803472.jpg_608x342.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://1img.hitv.com/preview/sp_images/2019/9/23/yuanchuang/330444/6435753/20190923111643210.jpg_608x342.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://3img.hitv.com/preview/cms_icon/2019/9/23/09/20190923181705786.jpg_608x342.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://0img.hitv.com/preview/cms_icon/2019/8/13/08/20190813103846397.jpg_608x342.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://3img.hitv.com/preview/cms_icon/2019/9/20/09/20190920202908220.jpg_608x342.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://2img.hitv.com/preview/cms_icon/2019/9/22/09/20190922113358783.jpg_608x342.jpg)"></div>
+                <div class="swiper-slide" style="background-image:url(https://1img.hitv.com/preview/cms_icon/2019/9/21/09/20190921194821250.jpg_608x342.jpg)"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination lbol0"></div>
+            </div>
+            <!-- Swiper JS -->
+            <script src="../dist/js/swiper.min.js"></script>
+            <!-- Initialize Swiper -->
+            </div>
+        </div>
+        <div class="main5">
+            <h1>生活时尚</h1>
+            <div class="row">
+                <div class="left col-md-4 col-sm-12">
+                    <!-- Swiper -->
+                    <div class="swiper-container zylb">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://1img.hitv.com/preview/cms_icon/2019/9/24/09/20190924181751669.jpg_608x342.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://1img.hitv.com/preview/cms_icon/2019/9/19/09/20190919153727654.jpg_608x342.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://3img.hitv.com/preview/cms_icon/2019/9/23/09/20190923181705786.jpg_608x342.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://3img.hitv.com/preview/cms_icon/2019/9/20/09/20190920202908220.jpg_608x342.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://2img.hitv.com/preview/cms_icon/2019/9/22/09/20190922113358783.jpg_608x342.jpg" alt="">
+                        </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination olzy"></div>
+                    </div>
+                    <h5>入坑！王甜甜一人身兼六大职务</h5>
+                    <p>酷盖业务能力到底有多大？</p>
+                </div>
+                <div class="right col-md-8 col-sm-12 row">
+                </div>
+            </div>
+        </div>
+        <div class="main6">
+            <h1>每日新歌</h1>
+            <div class="row">
+                <div class="left col-md-4 col-sm-12">
+                    <!-- Swiper -->
+                    <div class="swiper-container zylb1">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://0img.hitv.com/preview/cms_icon/2019/9/24/09/20190924155803472.jpg_608x342.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://3img.hitv.com/preview/sp_images/2019/9/23/yuanchuang/327306/6434394/20190923095551118.jpg_608x342.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://1img.hitv.com/preview/sp_images/2019/9/23/yuanchuang/330444/6435753/20190923111643210.jpg_608x342.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://2img.hitv.com/preview/cms_icon/2019/9/24/09/20190924150826893.jpg_366x206.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://2img.hitv.com/preview/sp_images/2019/9/20/yinle/49730/6416673/20190920133940283.jpg_366x206.jpg" alt="">
+                        </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination olzy1"></div>
+                    </div>
+                    <h5>王菲《我和我的祖国》</h5>
+                    <p>天籁之声唱响国庆档最强音</p>
+                </div>
+                <div class="right1 col-md-8 col-sm-12 row">
+                </div>
+            </div>
+        </div>
+        <div class="main7">
+            <h1>雅恩动漫</h1>
+            <div class="row">
+                <div class="left col-md-4 col-sm-12">
+                    <!-- Swiper -->
+                    <div class="swiper-container zylb2">
+                        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://1img.hitv.com/preview/cms_icon/2019/9/21/09/20190921194821250.jpg_608x342.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://3img.hitv.com/preview/cms_icon/2019/7/1/07/20190701161830146.jpg_608x342.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://2img.hitv.com/preview/cms_icon/2019/9/18/09/20190918110558012.jpg_608x342.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://2img.hitv.com/preview/cms_icon/2019/8/28/08/20190828100008887.jpg_608x342.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://0img.hitv.com/preview/cms_icon/2019/1/4/01/20190104101051312.jpg_608x342.jpg" alt="">
+                        </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination olzy2"></div>
+                    </div>
+                    <h5>菲梦少女第二季</h5>
+                    <p>人气偶像美乐蒂回归舞台</p>
+                </div>
+                <div class="right2 col-md-8 col-sm-12 row">
+                </div>
+            </div>
+        </div>
+        <div class="main8">
+            <h1></h1>
+            <div class="row"></div>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <p>关于我们</p>
+                    <p>公司介绍</p>
+                    <p>新闻动态</p>
+                    <p>联系方式</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <p>内容合作</p>
+                    <p>爱奇艺号</p>
+                    <p>芒果TV号</p>
+                    <p>雅恩TV号</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <p>技术合作</p>
+                    <p>安全应急响应中心</p>
+                    <p>技术故障反馈</p>
+                    <p>北京网络职业学院</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+                    <p>常见问题</p>
+                    <p>用户协议</p>
+                    <p>帮助中心</p>
+                    <p>隐私政策</p>
+                    <p>侵权举报与投诉</p>
+                </div>
+            </div>
+            <h6>
+                ©北京市房山区大窦路窦店镇北京网络职业学院二分院
+                <br>
+                雅恩科技 Jahn technology
+                <br>
+                官方邮箱 3586621281@qq.com
+            </h6>
+        </footer>
+    </div>
+    <script>
+        var swiper = new Swiper('.lb0', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.lbol0',
+          },
+          loop:"true",
+          autoplay : true
+        });
+        var swiper1 = new Swiper('.zylb', {
+            pagination: {
+                el: '.olzy',
+            },
+            loop:"true",
+            autoplay:true
+        });
+        var swiper2 = new Swiper('.zylb1', {
+            pagination: {
+                el: '.olzy1',
+            },
+            loop:"true",
+            autoplay:true
+        });
+        var swiper2 = new Swiper('.zylb2', {
+            pagination: {
+                el: '.olzy2',
+            },
+            loop:"true",
+            autoplay:true
+        });
+    </script>   
+</body>
+</html>

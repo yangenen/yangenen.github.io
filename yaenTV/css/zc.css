@@ -1,0 +1,365 @@
+* {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+li {
+  list-style: none;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+/*清除浮动代码*/
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+.clearfloat {
+  zoom: 1;
+}
+.container {
+  height: 100vh;
+  z-index: 999;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1569397887382&di=470ad66f2573431292fec942010b43de&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F6263b762a7ba76301c164aaf5710461a740c7e6815fbd3-qcZg0Y_fw658) no-repeat;
+  background-size: 100% 100%;
+}
+.dh0 {
+  z-index: 900;
+  display: none;
+  transition: all 0.5s;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  line-height: 100vh;
+  text-align: center;
+}
+.dh0 .dh0-bj {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
+}
+.dh0 h1 {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+}
+.dh0 h1 .dh0-logo {
+  display: none;
+  background: linear-gradient(to right bottom, #ff3fdf, rgba(22, 255, 197, 0.863), #33ff00, #001aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-family: "华文琥珀";
+  font-size: 2rem;
+}
+.box {
+  width: 4rem;
+  height: 4rem;
+  display: inline-block;
+  position: relative;
+  /* animation:name 2s linear; */
+  animation: name 3s linear infinite;
+  /* animation-iteration-count:infinite; */
+  transform-style: preserve-3d;
+}
+.box div {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  border: 0.1rem solid #2f00ff;
+  transition: all 1s;
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat !important;
+}
+.box div:nth-child(1) {
+  z-index: 10;
+  background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1569406344612&di=4209c02b3f5135342a8e5ee10eac5855&imgtype=0&src=http%3A%2F%2Fwx1.sinaimg.cn%2Flarge%2Fa681deebly1ftbi50xte9j20jr0b4q5u.jpg);
+  transform: rotateX(0deg) rotateY(0deg) translateZ(2rem);
+}
+.box div:nth-child(2) {
+  background: url(http://www.baijingapp.com/ueditor/php/upload/image/20151109/1447031056387349.jpg);
+  transform: rotateX(0deg) rotateY(90deg) translateZ(-2rem);
+}
+.box div:nth-child(3) {
+  background: url(http://images.tmtpost.com/uploads/images/2017/11/dbffa14e7c83a0a847ec58e2f9986e99_1511402062.jpeg?imageMogr2/strip/interlace/1/quality/85/thumbnail/1400x653/gravity/center/crop/%211400x653&ext=.jpeg);
+  transform: rotateX(0deg) rotateY(0deg) translateZ(-2rem);
+}
+.box div:nth-child(4) {
+  background: url(http://article.fd.zol-img.com.cn/t_s640x2000/g4/M0B/02/04/Cg-4WlPhxDSIBVEKAAAw3_JI-LAAAQQiAKNmNQAADD3015.jpg);
+  transform: rotateX(0deg) rotateY(90deg) translateZ(2rem);
+}
+.box div:nth-child(5) {
+  background: url(http://5b0988e595225.cdn.sohucs.com/images/20180410/975bd7b5c9564e3d8a9cc18fbfb8b78c.jpeg);
+  transform: rotateX(90deg) rotateY(0deg) translateZ(2rem);
+}
+.box div:nth-child(6) {
+  background: url(http://img.hookbase.com/img2017/10/26/2017102698547428.jpg);
+  transform: rotateX(90deg) rotateY(0deg) translateZ(-2rem);
+}
+@keyframes name {
+  from {
+    transform: rotateX(360deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(0deg) rotateY(-360deg);
+  }
+}
+.box:hover div:nth-child(1) {
+  border-radius: 20px;
+  transform: rotateX(0deg) rotateY(0deg) translateZ(-4rem);
+}
+.box:hover div:nth-child(2) {
+  border-radius: 20px;
+  transform: rotateX(0deg) rotateY(90deg) translateZ(4rem);
+}
+.box:hover div:nth-child(3) {
+  border-radius: 20px;
+  transform: rotateX(0deg) rotateY(0deg) translateZ(4rem);
+}
+.box:hover div:nth-child(4) {
+  border-radius: 20px;
+  transform: rotateX(0deg) rotateY(90deg) translateZ(-4rem);
+}
+.box:hover div:nth-child(5) {
+  border-radius: 20px;
+  transform: rotateX(90deg) rotateY(0deg) translateZ(-4rem);
+}
+.box:hover div:nth-child(6) {
+  border-radius: 20px;
+  transform: rotateX(90deg) rotateY(0deg) translateZ(4rem);
+}
+@media only screen and (max-width: 700px) {
+  .dn {
+    display: none !important;
+  }
+  .dh0 {
+    display: block !important;
+  }
+  .dh0 h1 {
+    top: 1rem;
+    height: 5rem;
+  }
+  .dh0 h1 .dh0-logo {
+    display: inline-block;
+    width: 45%;
+  }
+  .dh0 h1 span {
+    display: none;
+  }
+  .main {
+    padding-top: 10%;
+  }
+  .main .main-box {
+    top: 10% !important;
+    border: 10px solid #343434 !important;
+  }
+  .main .main-box div {
+    display: block !important;
+  }
+  .main .main-box .cont {
+    display: none !important;
+  }
+  .main .timg-top {
+    display: block !important;
+    background: url(../images/timg-top.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 99%;
+    height: 10%;
+    margin: 0;
+  }
+  .main .timg {
+    display: block;
+    background: url(../images/timg.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+  }
+}
+.main {
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+  overflow: hidden;
+  position: relative;
+}
+.main .main-box {
+  background: #343434;
+  position: absolute;
+  top: 0%;
+  width: 99%;
+  border: 10px solid #B8BCBF;
+  height: 80%;
+  overflow: hidden;
+  left: 0;
+}
+.main .main-box div {
+  display: none;
+}
+.main .main-box .cont {
+  width: 100%;
+  height: 100%;
+  background: white;
+  margin: 0;
+}
+.main .main-box .cont .cont-nav-top {
+  display: block;
+  height: 1.5rem;
+  width: 100%;
+}
+.main .main-box .cont .cont-nav-top .cont-nav {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  text-align: center;
+  font-size: 0.7rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  border-bottom: 2px solid #B8BCBF;
+}
+.main .main-box .cont .cont-nav-top .cont-nav:first-child {
+  border-right: 2px solid #B8BCBF;
+  font-weight: bold;
+  background: rgba(67, 214, 255, 0.9);
+  color: white;
+}
+.main .main-box .cont .cont-nav-bot {
+  width: 100%;
+  height: 82%;
+  position: relative;
+}
+.main .main-box .cont .cont-nav-bot .zc {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main .main-box .cont .cont-nav-bot .dl {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.main .main-box .cont .cont-nav-bot form {
+  display: none;
+}
+.main .main-box .cont .cont-nav-bot span b {
+  display: block;
+  width: 75%;
+  height: 25%;
+  text-align: left;
+  padding-left: 25%;
+  font-weight: normal;
+  font-size: 0.4rem;
+}
+.main .main-box .cont .cont-nav-bot span b input {
+  width: 100%;
+  margin-top: 0.20rem;
+}
+.main .main-box .cont .cont-nav-bot span b button {
+  padding: 0.20rem 0.4rem;
+  background: green;
+  color: white;
+}
+.main .main-box .cont .cont-nav-bot span b i {
+  display: block;
+  height: 0.5rem;
+  width: 100%;
+  color: red;
+  line-height: 0.5rem;
+}
+.main div {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.main div img {
+  width: 100%;
+  display: block;
+}
+.main .timg-top {
+  display: none;
+}
+.main .tim {
+  display: none;
+}
+.dn {
+  display: block;
+  width: 89%;
+  height: 37%;
+  background: url(../images/dn.png) no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: -16%;
+  left: 5%;
+}
