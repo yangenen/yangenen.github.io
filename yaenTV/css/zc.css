@@ -257,6 +257,11 @@ li {
     height: 10%;
     margin: 0;
   }
+    .main .timg a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
 }
 .main {
   width: 90%;
