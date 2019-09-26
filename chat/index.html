@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>聊天框</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    /*清除浮动代码*/
+    .clearfloat:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+    }
+    .clearfloat {
+    zoom: 1;
+    }
+    /* 聊天框 */
+    .chat{
+        position: relative;
+        user-select: none;
+        cursor: pointer;
+        width: 400px;
+        height: 400px;
+        background: rgb(233, 233, 233);
+        position: fixed;
+        bottom:-400px;
+        right:20px;
+    }
+    .chat-top{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background: #5BA2F0;
+    }
+    .chat-gl-user{
+        margin-top:5px;
+        height: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        float: left;
+        border-radius: 50%;
+    }
+    .chat-gl-user-nav{
+        font-size: 15px;
+        font-weight: normal;
+        color: white;
+        float: left;
+        display: inline-block;
+        height: 100%;
+    }
+    .chat-end,.chat-start{
+        cursor: pointer;
+        float: right;
+        margin-right: 10px;
+        height: 100%;
+    }
+    /* 开始 */
+    .start-chat{
+        width: 400px;
+        height: 40px;
+        line-height: 40px;
+        position: fixed;
+        bottom: 0;
+        right:20px;
+        background: #5BA2F0;
+        display: none;
+    }
+    .chat-start{
+        transform:rotate(180deg);
+    }
+    .chat-main{
+        overflow-y: scroll;
+        background: white;
+        width:98%;
+        border-left: 4px solid rgb(233, 233, 233);
+        border-right: 4px solid rgb(233, 233, 233);
+        height:60%;
+    }
+    .main-chat-nav{
+        width: 70%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        padding:10px;
+        background: rgb(190, 208, 255);
+        border-radius: 10px;
+        font-size: 13px;
+    }
+    .main-chat-nav a{
+        color: red;
+        text-decoration: none;
+    }
+    .main-chat .root{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .main-chat .root img{
+        width: 10%;
+        height: 10%;
+        border-radius: 50%;
+        float: left;
+    }
+    .main-chat .root p{
+        padding: 10px;
+        float: right;
+        width: 80%;
+        background: rgb(255, 251, 42);
+        border-radius: 0px 10px 10px 10px;
+        color: black;
+        font-size: 12px;
+    }
+    .main-chat .root p a{
+        color: red;
+        text-decoration: none;
+    }
+    .main-main{
+        width: 100%;
+    }
+    .main-chat .user{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .main-chat .user img{
+        width: 10%;
+        height: 10%;
+        border-radius: 50%;
+        float: right;
+    }
+    .main-chat .user p{
+        padding: 10px;
+        float: right;
+        margin-right: 20px;
+        background: rgb(13, 97, 253);
+        border-radius: 10px 0px 10px 10px;
+        color: black;
+        font-size: 12px;
+    }
+    .main-chat .user p a{
+        color: red;
+        text-decoration: none;
+    }
+    .chat-text{
+        cursor:inherit;
+        width: 90%;
+        right:2%;
+        position: absolute;
+        bottom:10%;
+        height:70px;
+        font-size: 18px;
+        background: white;
+        outline: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        resize: none;
+    }
+    .chat-bot{
+        width: 96%;
+        border-left: 8px solid rgb(233, 233, 233);
+        border-right: 8px solid rgb(233, 233, 233);
+        height: 10%;
+        position: absolute;
+        bottom: 0;
+    }
+    .chat-bot .sjh-nav{
+        margin-top:8px;
+        float: left;
+        font-weight: normal;
+        font-size: 15px;
+    }
+    .chat-bot .sjh{
+        margin-top:8px;
+        float: left;
+        outline: none;
+    }
+    .chat-bot .fs{
+        margin-top:8px;
+        float: right;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    </style>
+</head>
+<body>
+    <div class="chat">
+        <h1 class="chat-top">
+            <img class="chat-gl-user" src="https://www10c1.53kf.com/upload/header/72132404/10242466/15482252455933.jpg" alt="">
+            <span class="chat-gl-user-nav">资讯客服正在和您对话...</span>
+            <img class="chat-end" src="https://www10c1.53kf.com/style/chat/new2017/image/svg/to-minWindow.svg" alt="">
+        </h1>
+        <div class="chat-main">
+            <div class="main-chat-nav">
+                <a href="">轻松提升学历，</a>
+                初高中毕业都能考，院校直录，
+                不限基础，国家承认，了解详情可以留个
+                <a href="">【您的电话+想报考的学历】，</a>
+                稍后给您转发相关信息
+            </div>
+            <div class="main-chat">
+                <div class="root clearfloat">
+                    <img src="https://www10c1.53kf.com/upload/header/72132404/10242466/15482252455933.jpg" alt="">
+                    <p><a href="">2019年招生正在火热报名中</a>
+                        ，想要了解具体的报考院校、专业以及费用
+                        安排等，留个您的[电话号码、姓名]稍后会
+                        有老师给您回电解答哦! <a style="color: cadetblue;">温馨提示：手机号按Enter发送</a> </p>
+                </div>
+                <div class="main-main"></div>
+            </div>
+        </div>
+        <textarea class="chat-text"></textarea>
+        <h2 class="chat-bot">
+            <span class="sjh-nav">手机号：</span>
+            <input type="text" class="sjh">
+            <button class="fs">发送</button>
+        </h2>
+    </div>
+    <div class="start-chat">
+        <img class="chat-gl-user" src="https://www10c1.53kf.com/style/chat/new2017/image/svg/img-info24.svg" alt="">
+        <span class="chat-gl-user-nav">快速答疑，找技术顾问寻求帮助！</span>
+        <img class="chat-start" src="https://www10c1.53kf.com/style/chat/new2017/image/svg/to-minWindow.svg" alt="">
+    </div>
+    <script src="./jquery-1.8.3.min.js"></script>
+    <script>
+    let timer=setInterval(function(){
+        $(".chat").animate({"bottom":0});
+    },1000)
+    $(".chat-end").on("click",function(){
+        clearInterval(timer);
+        $(".chat").animate({"bottom":"-400px"});
+        $(".start-chat").fadeIn();
+    })
+    $(".chat-start").on("click",function(){
+        $(".chat").animate({"bottom":0});
+        $(".start-chat").fadeOut();
+    })
+    let main="";
+    $(".fs").on("click",function(){
+        main+="<div class='user clearfloat'><img src='http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/right-fixed-face.png?124'><p>"+$(".chat-text").val()+"</p></div>";
+        $(".main-main").html(main);
+        $(".chat-text").val("");
+    })
+    document.onkeydown=function(e){
+        // console.log(e.keyCode);
+        if(e.keyCode==13){
+            if($(".sjh").val()!=""){
+                main+="<div class='user clearfloat'><img src='http://img.mobiletrain.org/templates/mobiletrain/images/mo/index/right-fixed-face.png?124'><p>我的手机号是："+$(".sjh").val()+"</p></div>";
+                $(".main-main").html(main);
+                $(".sjh").val("");
+            }
+        }
+    }
+    </script>
+</body>
+</html>
