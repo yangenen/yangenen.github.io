@@ -757,3 +757,6 @@ footer h6 {
     line-height: 1.5rem;
   }
 }
+.row{
+    margin: 0 !important;
+}
