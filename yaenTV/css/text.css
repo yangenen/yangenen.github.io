@@ -616,6 +616,12 @@ nav {
 .main7 .row div div p {
   font-size: 0.2rem;
 }
+.row {
+  margin: 0 !important;
+}
+#bs-example-navbar-collapse-1 {
+  overflow-y: visible !important;
+}
 footer {
   width: 100%;
   margin-top: 1rem;
@@ -756,7 +762,4 @@ footer h6 {
   footer h6 {
     line-height: 1.5rem;
   }
-}
-.row{
-    margin: 0 !important;
 }
