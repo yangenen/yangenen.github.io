@@ -78,7 +78,7 @@ li {
   overflow: hidden;
   position: relative;
   padding: 0;
-  background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1569397887382&di=470ad66f2573431292fec942010b43de&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F6263b762a7ba76301c164aaf5710461a740c7e6815fbd3-qcZg0Y_fw658) no-repeat;
+  background: url(../images/vip/timg.jpg) no-repeat;
   background-size: 100% 100%;
 }
 .dh0 {
@@ -194,14 +194,14 @@ li {
   .sj-zc .usermain {
     display: none;
   }
-  .sj-zc .maindl {
-    display: block;
+  .sj-zc .mainzc {
+    display: block !important;
   }
   .sj-dl .usermain {
     display: none;
   }
-  .sj-dl .mainzc {
-    display: block;
+  .sj-dl .maindl {
+    display: block !important;
   }
   .dn {
     display: none !important;
@@ -257,7 +257,7 @@ li {
     height: 10%;
     margin: 0;
   }
-    .main .timg a {
+  .main .timg a {
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -421,6 +421,7 @@ li {
   font-size: 0.4rem;
 }
 .sj-dl .maindl {
+  display: none;
   width: 100%;
   padding: 5%;
   margin-top: 1rem;
@@ -482,6 +483,7 @@ li {
   z-index: 500;
 }
 .sj-zc .mainzc {
+  display: none;
   color: white;
   width: 100%;
   padding: 5%;
