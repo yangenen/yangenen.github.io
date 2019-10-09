@@ -1,0 +1,418 @@
+*{padding: 0;margin: 0;}
+li{list-style: none;}
+// @import 是导入的意思 可以把一个样式文件导入到另外一个样式文件里面去
+@import "common";
+html,body{
+    height: 1500px;
+    background: rgb(104, 104, 104);
+}
+nav{
+    width: 100%;
+    border:none !important;
+    background: #000 !important;
+}
+.navbar-brand{
+    padding: 0;
+    .logo{
+        height: 100%;
+    }
+}
+.navbar-nav{
+    li:hover a{
+        color: #000 !important;
+    }
+    li:hover{
+        background: white;
+    }
+    li{
+        a{
+            color: white !important;
+        }
+    }
+}
+// 轮播
+.carousel {
+  width:100%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.carousel ul {
+  list-style: none
+}
+
+.zw{
+  opacity: 0;
+  width: 100%;
+}
+.carousel ul li {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none
+}
+
+.carousel ul li  a img{
+  width: 100%;
+}
+
+.carousel ul li.first {
+  display: block
+}
+.btns{
+  opacity: 0;
+  transition: all 1s;
+}
+.btns a {
+  position: absolute;
+  width: 60px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, .6);
+  top: 50%;
+  margin-top: -50px;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 30px;
+  
+}
+
+.btns a.leftBtn {
+  left: 0;
+  border-radius:0 50% 50% 0;
+}
+
+.btns a.rightBtn {
+  right: 0;
+  border-radius: 50% 0 0 50%;
+}
+
+.circles {
+  position: absolute;
+  bottom:0px;
+  width: 100%;
+  height:1rem;
+}
+
+.circles ol {
+  width: 100%;
+  list-style: none
+}
+
+.circles ol li {
+  float: left;
+  width:25%;
+  height:1rem;
+  background-color: #333
+}
+
+.circles ol li.last {
+  margin-right: 0
+}
+
+.circles ol li {
+  color: #fff;
+  line-height:1rem;
+  font-size: 0.4rem;
+  opacity: 0.7;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 50% 50% 0 0;
+}
+
+.circles ol li.cur {
+  background-color: #fdfdfd;
+  color: black;
+  opacity: 1;
+}
+.carousel{
+  background-color: black;
+}
+.top-nav{
+  display: none;
+  width: 100%;
+  height:1rem;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  text-align: center;
+  .container{
+    display: inline-block;
+    height: 100%;
+    text-align: right;
+  }
+}
+.top-logo-main{
+  height: 100%;
+}
+.top-logo{
+  line-height: 1rem;
+}
+.top-logo img{
+  width: 75%;
+  display: inline-block;
+}
+.top-logo-r{
+  height: 100%;
+  text-align:center;
+  line-height: 1rem;
+  font-size: .6rem;
+  font-weight: bold;
+  background: linear-gradient(to right bottom, rgb(204, 36, 255) , rgba(22, 255, 197, 0.863)); /*这个函数w3c就有，不多讲*/
+  -webkit-background-clip: text;/*按字体裁剪*/
+  -webkit-text-fill-color: transparent;/*设置字体透明*/
+}
+.top-logo-d{
+  height: 100%;
+}
+.top-logo-d input{
+  width: 100%;
+  height: 80%;
+  padding-left: .6rem;
+  font-size: 0.3rem;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 1%;
+  border: 2px solid blue;
+}
+.top-logo-l{
+  height: 100%;
+}
+.top-logo-l button{
+  height: 70%;
+  margin-top: 5%;
+  outline: none;
+  width: 100%;
+  background: #16dcff;
+  padding: 5px 20px;
+  color: #ffffff;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.25rem;
+}
+.lb-bot-title{
+  div{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    p:hover{
+      color: white;
+    }
+    p{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 20px;
+      background: rgb(73, 73, 73);
+      width: 100%;
+      text-align: center;
+      font-size: 0.5rem;
+      color: rgb(168, 168, 168);
+    }
+    .lb-bot-p:hover{
+     background-color: #FF9900;;
+    }
+  }
+}
+img:hover {
+  transition: all ease 0.5s;
+  transform: scale(1.1);
+}
+.main{
+  .row{
+    h2:hover{
+      color: white;
+    }
+    h2{
+      font-size:0.7rem;
+      padding-left: 0.5rem;
+      color: #ccc;
+    }
+    div:hover .sc{
+      top:0;
+    }
+    div{
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+      position: relative;
+      overflow: hidden;
+      .sc{
+        transition: all 0.5s;
+        width: 100%;
+        padding-left: 0;
+        height: 100%;
+        background: white;
+        position: absolute;
+        top: 100%;
+        left: 0.25rem;
+        img{
+          margin-top:10px;
+          width: 100%;
+        }
+        h6{
+          font-size: 0.3rem;
+        }
+        p{
+          color: #333;
+          font-size: 0.25rem;
+          overflow: initial;
+        }
+      }
+      div{
+        width: 100%;
+        img{
+          width: 100%;
+        }
+        h4{
+          color: #fdfdfd;
+          overflow: hidden;
+          font-size: 0.45rem;
+          height: 0.5rem;
+        }
+        p{
+          font-size: 0.35rem;
+          height: 0.5rem;
+          color: #ccc;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+// 办理vip
+.bl{
+  width: 105%;
+  height: 6rem;
+  background: url(../images/vip/bangli.png) no-repeat;
+  background-size: 100% 100%;
+  div{
+    height: 100%;
+    p{
+      height: 60%;
+      margin-left: 10%;
+      margin-top: 2rem;
+      line-height: 3rem;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1rem;
+      color: #d5541a;
+    }
+  }
+  .bl-yue{
+    background:url(../images/vip/bl0.png) no-repeat;
+      background-size: 100% 100%;
+  }
+  .bl-ji{
+    background:url(../images/vip/bl1.png) no-repeat;
+      background-size: 100% 100%;
+  }
+}
+// 结尾
+footer{
+  width: 100%;
+  // border-top: 2px solid white;
+  margin-top: 1rem;
+  .row{
+    div{
+      border-top: 2px solid white;
+      text-align: center;
+      p{
+        color: white;
+        font-size: 0.25rem;
+        padding: 10px 0 10px 0; 
+      }
+      p:hover{
+        color: #0cfbd1;
+      }
+      p:first-child:hover{
+        color: #100cfb;
+      }
+      p:first-child{
+        font-size: 0.5rem;
+      }
+    }
+  }
+  h6{
+    width: 100%;
+    text-align: center;
+    color: #ccc;
+    line-height: 0.5rem;
+    font-size: 0.25rem;
+  }
+}
+.gg{
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media only screen and (max-width:1200px){
+    .carousel {
+        margin-top: 100px;
+    }      
+} 
+@media only screen and (max-width:800px){
+    .carousel {
+        margin-top: 50px;
+      }  
+}
+@media only screen and (max-width:320px){
+  .navbar-brand{
+    width: 70%;
+  }
+}  
+@media only screen and (max-width:750px){     
+    .navbar-nav{
+        li{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .btns{
+      display: none;
+    }
+    .navbar-right{
+        form{
+            div{
+                float: left;
+                width: 83%;
+            }
+            button{
+                float: right;
+                width: 15%;
+            }
+        }
+    }
+    .circles{
+        width: 20%;
+        height: 100%;
+        right: 0;
+      }
+      .circles ol{
+        width: 100%;
+        height: 100%;
+      }
+      .circles ol li {
+        height: 25%;
+        line-height: 1rem;
+        float: none;
+        width: 100%;
+        border-radius: 30px 0 0 30px;
+        font-size: 0.4rem;
+        overflow: hidden;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
