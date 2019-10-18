@@ -32,7 +32,7 @@ $(document).on("ready",function(){
 					$("section div").on("click",function(){
 						$(".text").css("display","block");
 						$("<button class='cuo'>X</button><div class='text-main'><video controls='controls' type='video/mp4' poster="+res.data[arr[$(this).index()]].ImgUrl+" src="+res.data[arr[$(this).index()]].video+"></video><h2>"+res.data[arr[$(this).index()]].GoodsName+"</h2><a href="+res.data[arr[$(this).index()]].ActLink+">"+res.data[arr[$(this).index()]].ShopName+"【优惠劵】</a><p>"+res.data[arr[$(this).index()]].TjRemark+"</p></div>").appendTo($(".text"));
-						$(".cuo").on("touchstart",function(){
+						$(".cuo").on("click",function(){
 							$(this).parent().html("");
 							$(".text").css("display","none");
 						})
