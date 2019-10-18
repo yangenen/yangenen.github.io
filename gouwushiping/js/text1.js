@@ -29,7 +29,7 @@ $(document).on("ready",function(){
 					}
 					$("section").html(text);
 					// console.log(arr);
-					$("section div").on("touchstart",function(){
+					$("section div").on("click",function(){
 						$(".text").css("display","block");
 						$("<button class='cuo'>X</button><div class='text-main'><video controls='controls' type='video/mp4' poster="+res.data[arr[$(this).index()]].ImgUrl+" src="+res.data[arr[$(this).index()]].video+"></video><h2>"+res.data[arr[$(this).index()]].GoodsName+"</h2><a href="+res.data[arr[$(this).index()]].ActLink+">"+res.data[arr[$(this).index()]].ShopName+"【优惠劵】</a><p>"+res.data[arr[$(this).index()]].TjRemark+"</p></div>").appendTo($(".text"));
 						$(".cuo").on("touchstart",function(){
@@ -37,7 +37,7 @@ $(document).on("ready",function(){
 							$(".text").css("display","none");
 						})
 					})
-					$(".main").children().on("touchstart",function(){
+					$(".main").children().on("click",function(){
 						$(this).attr("class","cur").siblings().removeClass();
 						text="";
 						// console.log($(this).index());
@@ -63,10 +63,10 @@ $(document).on("ready",function(){
 						}
 						// console.log($("section div"));
 						// console.log(newarr);
-						$("section div").on("touchstart",function(){
+						$("section div").on("click",function(){
 							$(".text").css("display","block");
 							$("<button class='cuo'>X</button><div class='text-main'><video controls='controls' type='video/mp4' poster="+res.data[newarr[$(this).index()]].ImgUrl+" src="+res.data[newarr[$(this).index()]].video+"></video><h2>"+res.data[newarr[$(this).index()]].GoodsName+"</h2><a href="+res.data[newarr[$(this).index()]].ActLink+">"+res.data[newarr[$(this).index()]].ShopName+"【优惠劵】</a><p>"+res.data[newarr[$(this).index()]].TjRemark+"</p></div>").appendTo($(".text"));
-							$(".cuo").on("touchstart",function(){
+							$(".cuo").on("t",function(){
 								$(this).parent().html("");
 								$(".text").css("display","none");
 							})
