@@ -66,7 +66,7 @@ $(document).on("ready",function(){
 						$("section div").on("click",function(){
 							$(".text").css("display","block");
 							$("<button class='cuo'>X</button><div class='text-main'><video controls='controls' type='video/mp4' poster="+res.data[newarr[$(this).index()]].ImgUrl+" src="+res.data[newarr[$(this).index()]].video+"></video><h2>"+res.data[newarr[$(this).index()]].GoodsName+"</h2><a href="+res.data[newarr[$(this).index()]].ActLink+">"+res.data[newarr[$(this).index()]].ShopName+"【优惠劵】</a><p>"+res.data[newarr[$(this).index()]].TjRemark+"</p></div>").appendTo($(".text"));
-							$(".cuo").on("t",function(){
+							$(".cuo").on("click",function(){
 								$(this).parent().html("");
 								$(".text").css("display","none");
 							})
