@@ -14,7 +14,7 @@ $(document).on("ready",function(){
 			$(".main").children().first().attr("class","cur");//nav导航栏当前设置样式
 			$.ajax({
 				type:"get",
-				url:"http://api.xuandan.com/DataApi/index?AppKey=gxm8qi8y8e&page=1&cid=0",
+				url:"http://api.xuandan.com/DataApi/index?AppKey=xaqjve1q1l&page=1&cid=0",
 				success:function(res){
 					console.log(res);
 					$("<div class='text'></div>").appendTo($("body"));
