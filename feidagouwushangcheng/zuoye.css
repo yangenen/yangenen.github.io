@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+/* 顶部 */
+.header-con {
+    position: relative;
+    width: 100%;
+}
+.header{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color:#17365d;
+}
+.header-content {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+}
+.qrcode {
+    position: relative;
+    margin: 5px 10px 0;
+}
+.header .qrcode .top-left {
+    display: block;
+    background-image: url(http://m.hbfd888.com/images/catalog.png);
+    width: 22px;
+    height: 22px;
+    margin: auto;
+    margin-top: 3px;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.qrcode .bottom-nav {
+    display: block;
+    height: 10px;
+    line-height: 10px;
+    margin-top: 4px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.box-search {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    background: rgba(255,255,255,.2);
+    margin-top: 10px;
+    height: 30px;
+    line-height: 30px;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 0.65rem;
+}
+a.react {
+    display: -webkit-box!important;
+    position: relative;
+    color: inherit;
+    height: 100%;
+    text-decoration: none;
+}
+.icon-sousuo{
+    margin-left: 12px;
+    color: #fff;
+    font-size: 0.75rem;
+    position: relative;
+    bottom: -1px;
+}
+.header .nav-wap-right {
+    margin-top: 5px;
+    position: relative;
+    margin: 5px 10px 0;
+}
+.header .nav-wap-right a{
+    display: inline-block;
+    cursor: pointer;
+}
+.single-line {
+    margin-left: .2rem;
+    font-size: 0.6rem;
+    color: #fff;
+}
+.header .nav-wap-right a:last-child .top-right {
+    background-image: url(http://m.hbfd888.com/images/message.png);
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    display:block;
+    position: relative;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.message-num {
+    position: absolute;
+    left: 17px;
+    top: 0;
+    background-color: #FFF;
+    min-width: 13px;
+    height: 13px;
+    line-height: 14px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-style: normal;
+    text-align: center;
+}
+.header .nav-wap-left .bottom-nav, .header .nav-wap-right .bottom-nav {
+    display: block;
+    height: 10px;
+    line-height: 10px;
+    margin-top: 4px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+/* 轮播 */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.lb img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-pagination-bullet-active{
+    width: 15px !important;
+}
+.nav{
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.nav div{
+    display: inline-block;
+}
+.nav div img{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.nav div p{
+    width: 100%;
+    text-align: center;
+}
+section h5 span{
+    display: inline-block;
+    width: 20%;
+    height: 2px;
+    background: yellow;
+}
+section h5{
+    width: 100%;
+    text-align: center;
+    color: yellow;
+    height: 20px;
+    line-height: 20px;
+}
+section img{
+    width: 100%;
+}
+.shop .item{
+    list-style: none;
+    width: 40%;
+    margin: 5%;
+    float: left;
+}
+.jz{
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+.jz:hover{
+    text-decoration: none;
+}
+.item h5{
+    text-align: right;
+    color: #17365d;
+    height: 20px;
+    overflow: hidden;
+}
+.item h5 span{
+    background: none;
+    float: left;
+    color: red;
+}
+.footer-nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    z-index: 101;
+    padding: 0;
+    margin: auto;
+    max-width: 640px;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+}
+.footer-nav ul {
+    width: 100%;
+    height: 47px;
+    margin: 0 auto;
+    padding: 0;
+    display: -webkit-box!important;
+    position: relative;
+}
+.footer-nav ul li {
+    list-style: none;
+    position: relative;
+    -webkit-box-flex: 1;
+    height: 47px;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 3px;
+}
+.footer-nav ul li a {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    display: block;
+    height: 47px;
+    position: relative;
+    margin: auto;
+}
+.footer-nav ul li i {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 2px auto 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.gotop img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+.gotop {
+    display: none;
+    width: 50px;
+    height:50px;
+    position: fixed;
+    bottom:110px;
+    right: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 251;
+    background: rgba(255,255,255,.85);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.16);
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .3s!important;
+}
+
+
+
+
+
+
+
+
+
+
+
