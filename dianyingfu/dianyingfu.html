@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>电银付</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div class="container" id="app">
+			<div class="bigimg">
+				<img src="https://pan.ydipos.com/image/pospay/%E9%80%9A%E6%98%93%E4%BB%98POS%E6%9C%BA%E5%B9%BB%E7%81%AF%E7%89%87-2-1.jpg" >
+			</div>
+			<div class="main">
+				<ul class="main-left">
+					<li v-for="(item,index) in liarr">
+						<div class="li-left">
+							<img :src="item.img" >
+						</div>
+						<div class="li-right">
+							<h4>{{item.name}}</h4>
+							<p>{{item.p}}</p>
+							<div class="li-right-bottom">
+								<img src="" class="icon">
+								<span>{{item.time}}</span>
+								<img src="" class="icon">
+								<span>{{item.else.join("|")}}</span>
+								<img src="" class="icon">
+								<span>{{item.inform}}</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="main-right">
+					<div class="videocontainer">
+						<img src="https://www.pospay888.com/d/file/2020-06-18/c328f863403bbd33170d83431ac97828.jpg" >
+						<div class="xz">下载及安装教程</div>
+					</div>
+					<div class="contact">
+						<h4>联系我们</h4>
+						<p>
+							<span>姓名</span>
+							<input type="text" placeholder="请输入姓名">
+						</p>
+						<p>
+							<span>电话</span>
+							<input type="text" placeholder="请输入电话">
+						</p>
+						<p>
+							<span>备注</span>
+							<input type="text" placeholder="请输入备注">
+						</p>
+						<p>
+							<button type="button">
+								立即提交
+							</button>
+						</p>
+					</div>
+					<div class="videocontainer imgbottom">
+						<img src="https://www.pospay888.com/d/file/2020-06-18/b42486660cd773bc35935b9468ad2a89.jpg" >
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+		  el: '#app',
+		  data: {
+		    liarr:[
+				{
+					img:"https://www.pospay888.com/d/file/2020-09-11/ba59ac2f68a347ab8a173524543ce3b2.jpg",
+					name:"为客户创建一个便捷、安全、可靠地支付环境",
+					p:"杉德集团成立至今已20余年，从最初小小的创业公司到现在成功打造了金融支付的产业链集团，我们走过了一段用心血和汗水铺就的奋斗之路，风雨与收获同在。",
+					time:"2020-09-07 15:19",
+					else:["其他","必学","模拟邀请函"],
+					inform:"官方通知"
+				},{
+					img:"https://www.pospay888.com/d/file/2020-09-11/ba59ac2f68a347ab8a173524543ce3b2.jpg",
+					name:"为客户创建一个便捷、安全、可靠地支付环境",
+					p:"杉德集团成立至今已20余年，从最初小小的创业公司到现在成功打造了金融支付的产业链集团，我们走过了一段用心血和汗水铺就的奋斗之路，风雨与收获同在。",
+					time:"2020-09-07 15:19",
+					else:["其他","必学","模拟邀请函"],
+					inform:"官方通知"
+				},{
+					img:"https://www.pospay888.com/d/file/2020-09-11/ba59ac2f68a347ab8a173524543ce3b2.jpg",
+					name:"为客户创建一个便捷、安全、可靠地支付环境",
+					p:"杉德集团成立至今已20余年，从最初小小的创业公司到现在成功打造了金融支付的产业链集团，我们走过了一段用心血和汗水铺就的奋斗之路，风雨与收获同在。",
+					time:"2020-09-07 15:19",
+					else:["其他","必学","模拟邀请函"],
+					inform:"官方通知"
+				},{
+					img:"https://www.pospay888.com/d/file/2020-09-11/ba59ac2f68a347ab8a173524543ce3b2.jpg",
+					name:"为客户创建一个便捷、安全、可靠地支付环境",
+					p:"杉德集团成立至今已20余年，从最初小小的创业公司到现在成功打造了金融支付的产业链集团，我们走过了一段用心血和汗水铺就的奋斗之路，风雨与收获同在。",
+					time:"2020-09-07 15:19",
+					else:["其他","必学","模拟邀请函"],
+					inform:"官方通知"
+				},{
+					img:"https://www.pospay888.com/d/file/2020-09-11/ba59ac2f68a347ab8a173524543ce3b2.jpg",
+					name:"为客户创建一个便捷、安全、可靠地支付环境",
+					p:"杉德集团成立至今已20余年，从最初小小的创业公司到现在成功打造了金融支付的产业链集团，我们走过了一段用心血和汗水铺就的奋斗之路，风雨与收获同在。",
+					time:"2020-09-07 15:19",
+					else:["其他","必学","模拟邀请函"],
+					inform:"官方通知"
+				},{
+					img:"https://www.pospay888.com/d/file/2020-09-11/ba59ac2f68a347ab8a173524543ce3b2.jpg",
+					name:"为客户创建一个便捷、安全、可靠地支付环境",
+					p:"杉德集团成立至今已20余年，从最初小小的创业公司到现在成功打造了金融支付的产业链集团，我们走过了一段用心血和汗水铺就的奋斗之路，风雨与收获同在。",
+					time:"2020-09-07 15:19",
+					else:["其他","必学","模拟邀请函"],
+					inform:"官方通知"
+				},{
+					img:"https://www.pospay888.com/d/file/2020-09-11/ba59ac2f68a347ab8a173524543ce3b2.jpg",
+					name:"为客户创建一个便捷、安全、可靠地支付环境",
+					p:"杉德集团成立至今已20余年，从最初小小的创业公司到现在成功打造了金融支付的产业链集团，我们走过了一段用心血和汗水铺就的奋斗之路，风雨与收获同在。",
+					time:"2020-09-07 15:19",
+					else:["其他","必学","模拟邀请函"],
+					inform:"官方通知"
+				},{
+					img:"https://www.pospay888.com/d/file/2020-09-11/ba59ac2f68a347ab8a173524543ce3b2.jpg",
+					name:"为客户创建一个便捷、安全、可靠地支付环境",
+					p:"杉德集团成立至今已20余年，从最初小小的创业公司到现在成功打造了金融支付的产业链集团，我们走过了一段用心血和汗水铺就的奋斗之路，风雨与收获同在。",
+					time:"2020-09-07 15:19",
+					else:["其他","必学","模拟邀请函"],
+					inform:"官方通知"
+				}
+			]
+		  }
+		})
+	</script>
+</html>

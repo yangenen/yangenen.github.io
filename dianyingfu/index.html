@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>电银付</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<div class="container" id="app">
+			<div class="bigimg">
+				<img src="http://g1.dfcfw.com/g3/201909/20190903092639.gif" >
+			</div>
+			<div class="main">
+				<div class="main-left">
+					<h4>{{leftmain.name}}</h4>
+					<p class="time">发布时间：{{leftmain.time}}  |  {{leftmain.address}}</p>
+					<div class="leftmainlist" v-for="(item,index) in leftmain.dataarr">
+						<p class="p">{{item.name}}</p>
+						<img :src="item.img" >
+						<p class="p">{{item.p}}</p>
+						<p class="come">来源:({{item.come}})</p>
+						<p class="end">举报反馈</p>
+					</div>
+				</div>
+				<div class="main-right">
+					<div id="" class="main-right-top">
+						<h2>相关文章</h2>
+						<div id="" class="li" v-for="item,index in  rightmain.listarr">
+							<p>{{item.name}}</p>
+							<img :src="item.img" >
+						</div>
+					</div>
+					<div class="videocontainer imgbottom">
+						<img src="https://www.pospay888.com/d/file/2020-06-18/b42486660cd773bc35935b9468ad2a89.jpg" >
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vm = new Vue({
+		  el: '#app',
+		  data: {
+			  leftmain:{
+				  name:"交强险责任限额和费率浮动系数调整 9月19日起执行",
+				  time:"2020-12-10 12：00",
+				  address:"天津亿企行",
+				  dataarr:[
+					  {
+						  name:"为给您提供更加优质、高效的金融服务，我行将于2020年9月12日（周六）至9月13日（周日）进行系统升级。系统升级期间，个人网银、手机银行、微信银行部分服务功能将暂停使用，具体安排如下：",
+						  img:"https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2502867615,315398322&fm=26&gp=0.jpg",
+						  p:"利润榜的前五名除了排在第一位的苹果公司，其余均为中国的商业银行——工商银行、建设银行、农业银行和中国银行。但对它们而言，似乎是利润和规模难以兼得，包括苹果在内的这五家公司收入均有大幅下滑。按总资产，中国工商银行则排名第一位。在净资产收益率（ROE）榜上，中国公司中排位最高的是华为、美的、腾讯、吉利和万科。其中美的是2016年第一次进入《财富》世界500强的中国家电企业，2017年依然是唯一一家该行业上榜公司。执掌该公司的董事长兼总裁方洪波2017年年初被《财富》（中文版）评为“年度中国商人”。",
+						  come:"中国银行股份有限公司"
+					  }
+				  ]
+			  },
+			  rightmain:{
+				  listarr:[
+						{
+						  name:"让损失的都回来吧！暴跌后抢抓反弹的四大方向",
+						  img:"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2551542120,1961087074&fm=26&gp=0.jpg"
+						},{
+						  name:"打破金融对民企的歧视，深化中国经济改革 | 《财富》中国500强解读",
+						  img:"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3523665212,2929086884&fm=26&gp=0.jpg"
+						},{
+						  name:"全国首例同性伴侣争抚养权案宣判",
+						  img:"https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1047583615,1358594825&fm=26&gp=0.jpg"
+						}
+				  ]
+			  }
+		  }
+		})
+	</script>
+</html>
