@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0, user-scalable=no" />
+	<meta content="嘻淘淘-社区电商新生活" name="keywords">
+  	<meta content="嘻淘淘-社区电商新生活" name="description">
+	<link href="layui/css/layui.css" rel="stylesheet">
+	<script type="text/javascript" src='layui/layui.js'></script>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>    
+	<div class='layui-fluid'>
+		<div class="top">
+			<i class="layui-icon return" style="font-size:25px;">&#xe65c;</i>   
+			<h1 style="font-size: 20px;line-height:40px;">小微商户报件</h1>
+		</div>
+		<form class="layui-form" action="">
+			<!-- 身份证照片 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">身份证照片：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12 layui-row">
+					<div class="layui-col-xs6 layui-col-sm6 layui-col-md6" id="test1">
+						<img src="./layui/images/images/cardz.png" class="sfzimg">
+				     </div>
+				     <div class="layui-col-xs6 layui-col-sm6 layui-col-md6" id="test2">
+				        <img src="./layui/images/images/cardf.png" class="sfzimg">
+				     </div>
+				</div>
+			  </div>
+			</div>
+			<!-- 手持身份证 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">手持身份证：</div>
+			  <div class="layui-card-body layui-row layui-col-space10 ">
+				<div class="layui-col-md12 layui-row">
+					<div class="layui-col-sm6 layui-col-sm-offset3 layui-col-xs6 layui-col-xs-offset3"  id="test3">
+				        <img src="./layui/images/images/hand.png" class="sfzimg">
+				    </div>
+				</div>
+			  </div>
+			</div>
+			<!-- 姓名 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">姓名：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="姓名" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<!-- 身份证号 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">身份证号：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="身份证号" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<!-- 证件有效期 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">证件有效期：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12 layui-row">
+				  <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 timeall" class="layui-inline">
+					  <div class="layui-input timetxt" id="time1">证件开始时间</div>
+					  <img src="./layui/images/images/date.png" >
+				  </div>
+				  <div class="layui-col-xs6 layui-col-sm6 layui-col-md6 timeall" class="layui-inline">
+					  <div class="layui-input timetxt" id="time2">证件结束时间</div>
+					  <img src="./layui/images/images/date.png" > 
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<!-- 银行卡照片 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">银行卡照片：</div>
+			  <div class="layui-card-body layui-row layui-col-space10 ">
+				<div class="layui-col-md12 layui-row">
+					<div class="layui-col-sm6 layui-col-sm-offset3 layui-col-xs6 layui-col-xs-offset3"  id="test4">
+				        <img src="./layui/images/images/bank.png" class="sfzimg">
+				    </div>
+				</div>
+			  </div>
+			</div>
+			<!-- 银行卡号 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">银行卡号：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="银行卡号" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<!-- 开户行 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">开户行：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+					<div class="layui-row">
+						<div class="layui-col-xs8">
+							<input type="text" class="layui-input" autocomplete="off" id="" placeholder="输入总行关键字" value="" />
+						</div>
+					</div>
+					<div class="layui-row">
+						<div class="layui-col-xs8">
+							<input type="text" class="layui-input" autocomplete="off" id="" placeholder="输入支行关键字" value="" />
+						</div>
+						<div id="" class="layui-col-xs4 layui-row">
+							<div class="layui-btn layui-btn-radius layui-col-xs8 layui-col-xs-offset2" style="background:linear-gradient(to right, #CAF982 0%,#63DDB3 100%);">检索</div>
+						</div>
+					</div>
+					<div id="" class="layui-row" style="margin-top:20px">
+						<select name="select" lay-verify="">
+							<option value="">请先检索</option>
+						</select>   
+					</div>
+			  </div>
+			</div>
+			<!-- 法人手机号 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">法人手机号：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="请输入法人手机号" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<!-- 商户地址 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">商户地址：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+					<div class="layui-form-item">
+						<div class="layui-inline">
+							<select name="province" id="province" lay-verify="required" lay-search lay-filter="province">
+								<option value="">请选择省</option>
+							</select>
+						</div>
+						<div class="layui-inline">
+							<select name="city" id="city" lay-verify="required" lay-search lay-filter="city">
+								<option value="">请选择市</option>
+							</select>
+						</div>
+						<div class="layui-inline">
+							<select name="district" id="district" lay-verify="required" lay-search>
+								<option value="">请选择区</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+			<!-- 详细地址 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">详细地址：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="请输入详细地址" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<!-- 店铺经营名称 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">店铺经营名称：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="请输入店铺经营名称" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<!-- 行业类别 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">行业类别：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12 layui-row">
+				  	<div class="layui-col-xs8">
+				  		<input type="text" class="layui-input" placeholder="请输入行业类别" autocomplete="off" id="" value="" />
+				  	</div>
+				  	<div id="" class="layui-col-xs4 layui-row">
+				  		<div class="layui-btn layui-btn-radius layui-col-xs8 layui-col-xs-offset2" style="background:linear-gradient(to right, #CAF982 0%,#63DDB3 100%);">检索</div>
+				  	</div>
+				</div>
+				<div id="" class="layui-row" style="margin-top:20px">
+					<select name="select" lay-verify="">
+						<option value="">请先检索</option>
+					</select>   
+				</div>
+			  </div>
+			</div>
+			<!-- 店铺经营范围 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">店铺经营范围：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="请简要描述店铺经营范围" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<!-- 店铺经营照 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">店铺经营照：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+					<div class="layui-row">
+						<div class="layui-col-xs6 layui-col-sm6 layui-col-md6" id="test5">
+							<img src="./layui/images/images/door.png" class="sfzimg">
+						</div>
+						<div class="layui-col-xs6 layui-col-sm6 layui-col-md6" id="test6">
+							<img src="./layui/images/images/money.png" class="sfzimg">
+						</div>
+					</div>
+					<div class="layui-row">
+						<div class="layui-col-xs6 layui-col-sm6 layui-col-md6" id="test7">
+							<img src="./layui/images/images/store.png" class="sfzimg">
+						</div>
+						<div class="layui-col-xs6 layui-col-sm6 layui-col-md6" id="test8">
+							<img src="./layui/images/images/card1.png" class="sfzimg">
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+			<!-- 协议照片 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">协议照片：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+					<div class="layui-row">
+						<div class="layui-col-xs6 layui-col-sm6 layui-col-md6" id="test9">
+							<img src="./layui/images/images/sign.png" class="sfzimg">
+						</div>
+						<div class="layui-col-xs6 layui-col-sm6 layui-col-md6" id="test10">
+							<img src="./layui/images/images/sign.png" class="sfzimg">
+						</div>
+					</div>
+					<div class="layui-row">
+						<div class="layui-col-xs6 layui-col-sm6 layui-col-md6" id="test11">
+							<img src="./layui/images/images/sign.png" class="sfzimg">
+						</div>
+						<div class="layui-col-xs6 layui-col-sm6 layui-col-md6" id="test12">
+							<img src="./layui/images/images/sign.png" class="sfzimg">
+						</div>
+					</div>
+				</div>
+			  </div>
+			</div>
+			<!-- 内卡借记卡 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">内卡借记卡（%）：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="请输入内卡借记卡扣率%0.4-1" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<!-- 内卡贷记卡 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">内卡贷记卡（%）：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="请输入内卡借记卡扣率%0.51-1" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<!-- 云闪付借记卡 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">云闪付借记卡（%）：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="请输入内卡借记卡扣率%0.26-1" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<!-- 借记卡 -->
+			<div class="layui-card">
+				<div class="layui-card-header">借记卡封顶：</div>
+				<div class="layui-card-body layui-row layui-col-space10">
+					<div class="layui-col-md12 layui-row">
+						<div class="layui-col-xs8">
+							<input type="text" class="layui-input" placeholder="请输入借记卡封顶(17-无封顶)" autocomplete="off" id="" value="" />
+						</div>
+						<div id="" class="layui-col-xs4 layui-row">
+							<div class="layui-btn layui-col-xs8 layui-col-xs-offset2 layui-btn-radius" style="padding:0;background:linear-gradient(to right, #CAF982 0%,#63DDB3 100%);">无封顶</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 银联二维码 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">银联二维码（%）：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="请输入银联二维码扣率%0.23-1" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<!-- 云闪付贷记卡 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">云闪付贷记卡（%）：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="请输入云闪付贷记卡扣率%0.26-1" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<!-- 微信二维码 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">微信二维码（%）：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="请输入微信二维码扣率%0.23-1" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<!-- 支付宝二维码 -->
+			<div class="layui-card">
+			  <div class="layui-card-header">支付宝二维码（%）：</div>
+			  <div class="layui-card-body layui-row layui-col-space10">
+				<div class="layui-col-md12">
+				  <input type="text" name="title" placeholder="请输入支付宝二维码扣率%0.23-1" autocomplete="off" class="layui-input">
+				</div>
+			  </div>
+			</div>
+			<div class="layui-card">
+				<button type="submit" class="layui-col-md12 layui-btn layui-btn-radius" style="width: 100%;margin-bottom: 50px; background:linear-gradient(to right, #CAF982 0%,#63DDB3 100%);">提交</button>
+			</div>
+	    </form>
+	</div> 
+	<script type="text/javascript" src="js/area.js" charset="utf-8"></script>
+	<script src="./js/select.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/small.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

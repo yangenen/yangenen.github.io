@@ -1,0 +1,66 @@
+.top{
+	width: 100%;
+	display: flex;
+	background-color: #FFFFFF;
+	z-index: 10;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	position: fixed;
+	top:0;
+}
+.return{
+	position: absolute;
+	left: 0;
+}
+form{
+	margin-top: 40px;;
+}
+.sfzimg{
+	width: 96%;
+	margin:2%;
+}
+@media screen and (min-width: 1200px) {
+        .sfzimg{
+			height:410px;
+		}
+}
+@media screen and(min-width: 960px) and (max-width: 1199px) {
+        .sfzimg{
+			height:350px;
+		}
+}
+@media screen and(min-width: 768px) and (max-width: 959px) {
+        .sfzimg{
+			height:280px;
+		}
+}
+@media screen and(min-width: 480px) and (max-width: 767px) {
+        .sfzimg{
+			height:222px;
+		}
+}
+@media screen and (max-width: 479px) {
+        .sfzimg{
+			height:100px;
+		}
+}
+.timeall{
+	display: flex;
+}
+.timetxt{
+	width: 100%;
+	padding: 0;
+	line-height: 40px;
+	text-align: center;
+}
+.timeall img{
+	width: 50px;
+	margin: 0px 10px;
+}
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after{
+	border: none;
+}
+.layui-card-body{
+	padding: 0;
+}
